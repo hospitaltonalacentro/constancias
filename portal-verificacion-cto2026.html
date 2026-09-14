@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portal de verificación de constancias del I Congreso de Ciencias de la Salud — Hospital Tonalá Centro (SESAT).">
+<meta name="robots" content="noindex">
+<title>Verificación de Constancias CTO2026</title>
+<style>
+  :root{color-scheme:light dark}
+  html,body{margin:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
+<style>
+  :root{
+    --fondo:#F5F3EE;
+    --superficie:#FFFFFF;
+    --superficie-2:#FBFAF6;
+    --tinta:#101A2E;
+    --tenue:#5D6879;
+    --linea:#DCD8CF;
+    --linea-fuerte:#C3BEB1;
+    --azul:#023375;
+    --azul-suave:#E6ECF6;
+    --cielo:#61C1E9;
+    --dorado:#9E7C2B;
+    --valido:#16643F;
+    --valido-fondo:#E9F3ED;
+    --alerta:#A0242C;
+    --alerta-fondo:#FAEDEC;
+    --sombra:0 1px 2px rgba(16,26,46,.06), 0 8px 24px -16px rgba(2,51,117,.25);
+    --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --fondo:#0B1020;
+      --superficie:#141C2E;
+      --superficie-2:#182135;
+      --tinta:#E8EDF7;
+      --tenue:#94A1B9;
+      --linea:#2A3550;
+      --linea-fuerte:#3B4868;
+      --azul:#86B0EE;
+      --azul-suave:#1B2A46;
+      --cielo:#61C1E9;
+      --dorado:#D3AE5E;
+      --valido:#5CC894;
+      --valido-fondo:#12301F;
+      --alerta:#F08B93;
+      --alerta-fondo:#341418;
+      --sombra:0 1px 2px rgba(0,0,0,.4), 0 12px 30px -18px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"]{
+    --fondo:#0B1020;
+    --superficie:#141C2E;
+    --superficie-2:#182135;
+    --tinta:#E8EDF7;
+    --tenue:#94A1B9;
+    --linea:#2A3550;
+    --linea-fuerte:#3B4868;
+    --azul:#86B0EE;
+    --azul-suave:#1B2A46;
+    --cielo:#61C1E9;
+    --dorado:#D3AE5E;
+    --valido:#5CC894;
+    --valido-fondo:#12301F;
+    --alerta:#F08B93;
+    --alerta-fondo:#341418;
+    --sombra:0 1px 2px rgba(0,0,0,.4), 0 12px 30px -18px rgba(0,0,0,.8);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--fondo);
+    color:var(--tinta);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .hoja{
+    max-width:720px;
+    margin:0 auto;
+    padding-inline:20px;
+    padding-block:0 56px;
+  }
+  .regla-superior{height:4px;background:var(--dorado)}
+
+  /* ---------- Membrete ---------- */
+  header.membrete{
+    text-align:center;
+    padding-block:34px 26px;
+    border-bottom:1px solid var(--linea);
+  }
+  .institucion{
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--azul);
+    margin:0;
+  }
+  .opd{
+    font-size:11.5px;
+    color:var(--tenue);
+    letter-spacing:.04em;
+    margin:5px 0 0;
+  }
+  h1.congreso{
+    font-family:var(--serif);
+    font-weight:700;
+    font-size:clamp(25px, 6vw, 33px);
+    line-height:1.15;
+    text-wrap:balance;
+    margin:16px 0 0;
+    color:var(--tinta);
+  }
+  .lema{
+    font-family:var(--serif);
+    font-style:italic;
+    color:var(--dorado);
+    font-size:15px;
+    margin:7px 0 0;
+  }
+  .rotulo-portal{
+    margin-top:20px;
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:var(--tenue);
+  }
+  .rotulo-portal::before,.rotulo-portal::after{
+    content:"";
+    width:26px;
+    height:1px;
+    background:var(--linea-fuerte);
+  }
+
+  /* ---------- Ventanilla ---------- */
+  .ventanilla{
+    margin-top:30px;
+    background:var(--superficie);
+    border:1px solid var(--linea-fuerte);
+    border-top:3px solid var(--azul);
+    box-shadow:var(--sombra);
+    padding:26px 24px 24px;
+  }
+  .ventanilla h2{
+    font-family:var(--serif);
+    font-size:21px;
+    font-weight:600;
+    margin:0 0 6px;
+  }
+  .ventanilla p.intro{
+    margin:0 0 20px;
+    color:var(--tenue);
+    font-size:14px;
+    max-width:58ch;
+  }
+  form{display:grid;gap:16px}
+  .campos{display:grid;grid-template-columns:1.6fr 1fr;gap:14px}
+  @media (max-width:520px){.campos{grid-template-columns:1fr}}
+  .campo{display:grid;gap:6px}
+  label{
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    color:var(--tenue);
+  }
+  input{
+    font-family:var(--mono);
+    font-size:15px;
+    letter-spacing:.03em;
+    color:var(--tinta);
+    background:var(--superficie-2);
+    border:1px solid var(--linea-fuerte);
+    border-radius:2px;
+    padding:11px 12px;
+    width:100%;
+    text-transform:uppercase;
+  }
+  input::placeholder{color:var(--tenue);opacity:.65;text-transform:none;letter-spacing:0}
+  input:focus-visible{
+    outline:2px solid var(--azul);
+    outline-offset:1px;
+    border-color:var(--azul);
+  }
+  .acciones{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  button{
+    font-family:var(--sans);
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:.03em;
+    color:var(--fondo);
+    background:var(--azul);
+    border:1px solid var(--azul);
+    border-radius:2px;
+    padding:11px 24px;
+    cursor:pointer;
+  }
+  button:hover{filter:brightness(1.12)}
+  button:focus-visible{outline:2px solid var(--dorado);outline-offset:2px}
+  button.secundario{
+    background:transparent;
+    color:var(--azul);
+    border-color:var(--linea-fuerte);
+  }
+  .pista{font-size:12.5px;color:var(--tenue);margin:0}
+
+  /* ---------- Acta ---------- */
+  .acta{
+    margin-top:22px;
+    background:var(--superficie);
+    border:1px solid var(--linea-fuerte);
+    box-shadow:var(--sombra);
+    overflow:hidden;
+  }
+  .banda{
+    display:flex;
+    align-items:center;
+    gap:13px;
+    padding:15px 22px;
+    border-bottom:1px solid var(--linea);
+  }
+  .banda.ok{background:var(--valido-fondo);border-bottom-color:var(--valido)}
+  .banda.no{background:var(--alerta-fondo);border-bottom-color:var(--alerta)}
+  .banda svg{flex:none}
+  .banda .titulo{
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    line-height:1.3;
+  }
+  .banda.ok .titulo{color:var(--valido)}
+  .banda.no .titulo{color:var(--alerta)}
+  .banda .sub{font-size:13px;color:var(--tenue);margin-top:2px;line-height:1.4}
+
+  .titular{
+    padding:24px 22px 20px;
+    border-bottom:1px solid var(--linea);
+    text-align:center;
+  }
+  .titular .etiqueta{
+    font-size:10.5px;font-weight:600;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--tenue);
+  }
+  .titular .nombre{
+    font-family:var(--serif);
+    font-size:clamp(21px,5.4vw,27px);
+    font-weight:600;
+    color:var(--azul);
+    line-height:1.2;
+    text-wrap:balance;
+    margin-top:8px;
+  }
+  .insignia{
+    display:inline-block;
+    margin-top:12px;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--azul);
+    background:var(--azul-suave);
+    border:1px solid var(--cielo);
+    border-radius:999px;
+    padding:5px 14px;
+  }
+
+  dl.renglones{margin:0;padding:6px 22px 18px}
+  dl.renglones > div{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    gap:14px;
+    padding:11px 0;
+    border-bottom:1px solid var(--linea);
+    align-items:baseline;
+  }
+  dl.renglones > div:last-child{border-bottom:none}
+  @media (max-width:520px){
+    dl.renglones > div{grid-template-columns:1fr;gap:3px}
+  }
+  dt{
+    font-size:10.5px;font-weight:600;letter-spacing:.11em;
+    text-transform:uppercase;color:var(--tenue);
+  }
+  dd{margin:0;font-size:15px}
+  dd.dato{font-family:var(--mono);font-size:14px;letter-spacing:.04em;font-variant-numeric:tabular-nums}
+  dd .horas{font-family:var(--mono);font-weight:600;font-size:16px}
+
+  .pie-acta{
+    padding:16px 22px 20px;
+    background:var(--superficie-2);
+    border-top:1px solid var(--linea);
+    font-size:12.5px;
+    color:var(--tenue);
+    line-height:1.5;
+  }
+  .pie-acta strong{color:var(--tinta);font-weight:600}
+
+  /* ---------- Secciones informativas ---------- */
+  section.bloque{margin-top:44px}
+  h2.seccion{
+    font-family:var(--serif);
+    font-size:19px;
+    font-weight:600;
+    margin:0 0 4px;
+  }
+  .seccion-nota{color:var(--tenue);font-size:13.5px;margin:0 0 16px;max-width:60ch}
+
+  ol.pasos{
+    list-style:none;
+    margin:0;padding:0;
+    display:grid;gap:1px;
+    background:var(--linea);
+    border:1px solid var(--linea);
+  }
+  ol.pasos li{
+    background:var(--fondo);
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:14px;
+    padding:14px 16px;
+    align-items:start;
+  }
+  ol.pasos .n{
+    font-family:var(--mono);
+    font-size:12px;
+    font-weight:600;
+    color:var(--dorado);
+    letter-spacing:.06em;
+    padding-top:2px;
+  }
+  ol.pasos p{margin:0;font-size:14px}
+  ol.pasos p span{color:var(--tenue)}
+
+  table.datos{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+  }
+  table.datos th,table.datos td{
+    text-align:left;
+    padding:10px 0;
+    border-bottom:1px solid var(--linea);
+    vertical-align:top;
+  }
+  table.datos th{
+    width:170px;
+    font-size:10.5px;font-weight:600;letter-spacing:.11em;
+    text-transform:uppercase;color:var(--tenue);
+    padding-right:14px;
+  }
+  @media (max-width:520px){
+    table.datos th{width:120px}
+  }
+
+  .padron{
+    border:1px solid var(--linea-fuerte);
+    background:var(--superficie);
+    padding:18px 20px;
+  }
+  .cifras{
+    display:flex;flex-wrap:wrap;gap:28px;
+    padding-bottom:14px;border-bottom:1px solid var(--linea);
+  }
+  .cifra .v{
+    font-family:var(--mono);
+    font-size:26px;font-weight:600;
+    color:var(--azul);
+    font-variant-numeric:tabular-nums;
+    line-height:1.1;
+  }
+  .cifra .k{
+    font-size:10.5px;font-weight:600;letter-spacing:.11em;
+    text-transform:uppercase;color:var(--tenue);margin-top:4px;
+  }
+  .padron p{margin:14px 0 0;font-size:13px;color:var(--tenue);line-height:1.55}
+
+  footer{
+    margin-top:48px;
+    padding-top:22px;
+    border-top:3px solid var(--dorado);
+    font-size:12.5px;
+    color:var(--tenue);
+    line-height:1.6;
+  }
+  footer .firmas{
+    display:flex;flex-wrap:wrap;gap:26px;margin-bottom:16px;
+  }
+  footer .firma .n{color:var(--tinta);font-weight:600;font-size:13.5px}
+  footer .clave{
+    font-family:var(--mono);
+    letter-spacing:.08em;
+    color:var(--dorado);
+    font-weight:600;
+  }
+  .oculto{display:none}
+  @media (prefers-reduced-motion: no-preference){
+    .acta{animation:aparece .25s ease-out}
+    @keyframes aparece{from{opacity:.4;transform:translateY(-4px)}to{opacity:1;transform:none}}
+  }
+</style>
+
+<div class="regla-superior"></div>
+<div class="hoja">
+
+  <header class="membrete">
+    <p class="institucion">Hospital Tonalá Centro</p>
+    <p class="opd">SESAT · Servicios de Salud Tonalá — Organismo Público Descentralizado</p>
+    <h1 class="congreso">I Congreso de Ciencias de la Salud</h1>
+    <p class="lema">“La salud, la cuidamos todos”</p>
+    <p class="rotulo-portal">Portal de verificación de constancias</p>
+  </header>
+
+  <div class="ventanilla">
+    <h2>Verifique una constancia</h2>
+    <p class="intro">Capture el folio y la clave de verificación impresos al pie del documento, junto al código QR. Ambos datos son necesarios: el folio por sí solo no despliega información.</p>
+    <form id="formulario" autocomplete="off" novalidate>
+      <div class="campos">
+        <div class="campo">
+          <label for="folio">Folio de la constancia</label>
+          <input id="folio" name="folio" placeholder="CTO2026-CONST-ASI-0001" spellcheck="false" inputmode="text">
+        </div>
+        <div class="campo">
+          <label for="clave">Clave de verificación</label>
+          <input id="clave" name="clave" placeholder="10 caracteres" spellcheck="false" maxlength="14">
+        </div>
+      </div>
+      <div class="campo">
+        <label for="nombre">Nombre del titular <span style="text-transform:none;letter-spacing:0;font-weight:400">— opcional, para confirmar la identidad</span></label>
+        <input id="nombre" name="nombre" placeholder="Tal como aparece impreso en la constancia" spellcheck="false">
+      </div>
+      <div class="acciones">
+        <button type="submit" id="btn-verificar">Verificar</button>
+        <button type="button" class="secundario" id="btn-limpiar">Limpiar</button>
+        <p class="pista" id="pista">Escanear el QR de la constancia llena ambos campos automáticamente.</p>
+      </div>
+    </form>
+  </div>
+
+  <div id="resultado" aria-live="polite"></div>
+
+  <section class="bloque">
+    <h2 class="seccion">Cómo verificar</h2>
+    <p class="seccion-nota">La verificación es pública y no requiere cuenta ni registro.</p>
+    <ol class="pasos">
+      <li><span class="n">01</span><p>Escanee el código QR del ángulo inferior izquierdo de la constancia, o abra esta página directamente.</p></li>
+      <li><span class="n">02</span><p>Capture el folio completo y la clave de diez caracteres. <span>Mayúsculas, minúsculas, acentos y espacios sobrantes se corrigen solos.</span></p></li>
+      <li><span class="n">03</span><p>Escriba además el nombre impreso si desea cotejar la identidad del titular. <span>Es opcional: la validez de la constancia no depende de este campo.</span></p></li>
+      <li><span class="n">04</span><p>Lea el acta de verificación. Los datos desplegados provienen del registro de emisión, no del documento presentado.</p></li>
+    </ol>
+  </section>
+
+  <section class="bloque">
+    <h2 class="seccion">Qué acredita la constancia</h2>
+    <table class="datos">
+      <tbody>
+        <tr><th scope="row">Evento</th><td>I Congreso de Ciencias de la Salud, Hospital Tonalá Centro — SESAT</td></tr>
+        <tr><th scope="row">Fechas</th><td>Miércoles 7 y jueves 8 de octubre de 2026, de 08:00 a 15:00 h</td></tr>
+        <tr><th scope="row">Sede</th><td>Tonalá, Jalisco</td></tr>
+        <tr><th scope="row">Duración acreditada</th><td>14 horas por las dos jornadas</td></tr>
+        <tr><th scope="row">Modalidades</th><td>Asistente, ponente, moderador, tallerista, autor de trabajo libre, evaluador y comités</td></tr>
+        <tr><th scope="row">Emite</th><td>Dirección General y Jefatura de Enseñanza del Hospital Tonalá Centro</td></tr>
+        <tr><th scope="row">Clave de control</th><td><span class="clave" style="font-family:var(--mono);letter-spacing:.08em;font-weight:600;color:var(--dorado)">CTO2026</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="bloque">
+    <h2 class="seccion">Estado del padrón</h2>
+    <p class="seccion-nota">Las constancias se incorporan a este padrón conforme se emiten. Un folio aún no cargado no puede verificarse aquí.</p>
+    <p class="seccion-nota">Este portal no publica la lista de asistentes: los nombres se despliegan abreviados y sólo tras capturar la clave impresa.</p>
+    <div class="padron">
+      <div class="cifras">
+        <div class="cifra"><div class="v" id="c-total">0</div><div class="k">Constancias en padrón</div></div>
+        <div class="cifra"><div class="v" id="c-asi">0</div><div class="k">Asistentes</div></div>
+        <div class="cifra"><div class="v" id="c-pon">0</div><div class="k">Ponentes</div></div>
+      </div>
+      <p id="nota-padron"></p>
+      <p><strong style="color:var(--tinta);font-weight:600">Protección de datos personales:</strong> este portal no almacena nombres completos ni claves. De cada constancia conserva únicamente el nombre de pila con las iniciales de los apellidos y dos resúmenes criptográficos SHA-256 —uno de la clave y otro del nombre—, de los que no puede reconstruirse el dato original. El cotejo del nombre se resuelve comparando resúmenes en el navegador de quien consulta.</p>
+      <p>Cualquier alteración del folio, de la clave o del nombre rompe la correspondencia y la constancia deja de validar.</p>
+    </div>
+  </section>
+
+  <section class="bloque">
+    <h2 class="seccion">Si una constancia no valida</h2>
+    <p class="seccion-nota">Antes de reportarla, confirme la transcripción del folio y de la clave. Si el documento es legítimo y aun así no valida, comuníquelo a la Jefatura de Enseñanza indicando el folio impreso, el nombre del titular y la fecha en que recibió la constancia. Una constancia que no valida no acredita participación en el congreso.</p>
+  </section>
+
+  <footer>
+    <div class="firmas">
+      <div class="firma">
+        <div class="n">Dr. Maxixcatzin Alejandro Molina Ojeda</div>
+        <div>Director General</div>
+      </div>
+      <div class="firma">
+        <div class="n">Dr. Cristian Quezada Esparza</div>
+        <div>Jefatura de Enseñanza</div>
+      </div>
+    </div>
+    <div>Hospital Tonalá Centro · SESAT — Servicios de Salud Tonalá (OPD) · Tonalá, Jalisco, México</div>
+    <div>Clave de control del congreso <span class="clave">CTO2026</span> · Portal operado por la Jefatura de Enseñanza</div>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* =====================================================================
+     PADRÓN DE CONSTANCIAS EMITIDAS
+     ---------------------------------------------------------------------
+     Un registro por constancia emitida. NINGÚN dato personal completo se
+     almacena aquí: sólo resúmenes criptográficos y el nombre abreviado.
+
+        h  = SHA-256("FOLIO|CLAVE|CTO2026")          → 32 hex
+        hn = SHA-256("FOLIO|NOMBRE_NORMALIZADO|CTO2026") → 32 hex
+
+     NOMBRE_NORMALIZADO: mayúsculas, sin acentos, sólo letras A-Z y
+     espacios simples. `parcial` es el nombre de pila y las iniciales de
+     los apellidos.
+     ===================================================================== */
+  var ACTUALIZADO = "14 de septiembre de 2026";
+  var PADRON = [
+    {
+      folio:"CTO2026-CONST-ASI-0001",
+      h:"66fb57eb29b1cd1462cbc5b8103ca736",
+      hn:"0bb9f9db92767ab58e77b2a69bad2211",
+      parcial:"CRISTIAN Q. E.",
+      tipo:"ASI",
+      modalidad:"Asistente · Programa completo",
+      horas:14,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"14 de septiembre de 2026",
+      nota:"Emisión de prueba del sistema de constancias."
+    }
+  ];
+
+  /* ------------------------------------------------------------------ */
+
+  var $ = function(id){ return document.getElementById(id); };
+  var formulario = $("formulario");
+  var campoFolio = $("folio");
+  var campoClave = $("clave");
+  var campoNombre = $("nombre");
+  var contenedor = $("resultado");
+
+  function normalizaFolio(v){
+    return String(v || "").toUpperCase().replace(/\s+/g, "").replace(/[–—]/g, "-");
+  }
+  function normalizaClave(v){
+    return String(v || "").toUpperCase().replace(/[^0-9A-Z]/g, "");
+  }
+  function normalizaNombre(v){
+    return String(v || "")
+      .toUpperCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^A-Z ]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+  function escapa(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c];
+    });
+  }
+
+  async function resumen(texto){
+    if (!window.crypto || !window.crypto.subtle) return null;
+    var datos = new TextEncoder().encode(texto);
+    var buf = await window.crypto.subtle.digest("SHA-256", datos);
+    var hex = Array.prototype.map.call(new Uint8Array(buf), function(b){
+      return b.toString(16).padStart(2, "0");
+    }).join("");
+    return hex.slice(0, 32);
+  }
+
+  var ICONO_OK = '<svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">'
+    + '<circle cx="13" cy="13" r="11.5" fill="none" stroke="currentColor" stroke-width="1.6"/>'
+    + '<path d="M7.6 13.4l3.6 3.6 7.2-7.6" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var ICONO_NO = '<svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">'
+    + '<circle cx="13" cy="13" r="11.5" fill="none" stroke="currentColor" stroke-width="1.6"/>'
+    + '<path d="M9 9l8 8M17 9l-8 8" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>';
+
+  function renglon(etiqueta, valor, clase){
+    return '<div><dt>' + etiqueta + '</dt><dd class="' + (clase || "") + '">' + valor + '</dd></div>';
+  }
+
+  function pintaValida(reg, folio, clave, estadoNombre){
+    var cotejo;
+    if (estadoNombre === "coincide"){
+      cotejo = '<span style="color:var(--valido);font-weight:600">Coincide con el registro de emisión</span>';
+    } else if (estadoNombre === "difiere"){
+      cotejo = '<span style="color:var(--alerta);font-weight:600">No coincide con el registro de emisión</span>'
+        + '<div style="color:var(--tenue);font-size:13px;margin-top:3px">Revise la transcripción. Si el nombre impreso es el correcto, repórtelo a la Jefatura de Enseñanza.</div>';
+    } else {
+      cotejo = '<span style="color:var(--tenue)">No capturado. Escriba el nombre impreso para cotejarlo.</span>';
+    }
+
+    var filas = ""
+      + renglon("Folio", '<span style="white-space:nowrap">' + escapa(folio) + '</span>', "dato")
+      + renglon("Clave de verificación", escapa(clave), "dato")
+      + renglon("Cotejo del nombre", cotejo, "")
+      + renglon("Horas acreditadas", '<span class="horas">' + reg.horas + '</span> horas', "")
+      + renglon("Evento", "I Congreso de Ciencias de la Salud — Hospital Tonalá Centro (SESAT)")
+      + renglon("Fechas", escapa(reg.fechas))
+      + renglon("Sede", escapa(reg.sede))
+      + renglon("Fecha de expedición", escapa(reg.expedida));
+
+    contenedor.innerHTML = ''
+      + '<div class="acta">'
+      +   '<div class="banda ok">' + ICONO_OK
+      +     '<div><div class="titulo">Constancia válida</div>'
+      +     '<div class="sub">El folio y la clave corresponden a un registro de emisión del congreso.</div></div>'
+      +   '</div>'
+      +   '<div class="titular">'
+      +     '<div class="etiqueta">Otorgada a</div>'
+      +     '<div class="nombre">' + escapa(reg.parcial) + '</div>'
+      +     '<div class="insignia">' + escapa(reg.modalidad) + '</div>'
+      +   '</div>'
+      +   '<dl class="renglones">' + filas + '</dl>'
+      +   '<div class="pie-acta">'
+      +     (reg.nota ? '<div style="margin-bottom:8px"><strong>Nota:</strong> ' + escapa(reg.nota) + '</div>' : '')
+      +     '<div style="margin-bottom:8px">El nombre se despliega abreviado por protección de datos personales. '
+      +     'La clave de verificación se deriva del <strong>nombre completo</strong> del titular: si el nombre impreso '
+      +     'hubiera sido alterado, la clave no validaría.</div>'
+      +     'Esta consulta confirma que los datos anteriores coinciden con el registro de emisión resguardado por la '
+      +     'Jefatura de Enseñanza. Los datos mostrados provienen de ese registro, no del documento presentado: '
+      +     'si el impreso difiere en modalidad u horas, prevalece lo asentado aquí.'
+      +   '</div>'
+      + '</div>';
+  }
+
+  function pintaInvalida(){
+    contenedor.innerHTML = ''
+      + '<div class="acta">'
+      +   '<div class="banda no">' + ICONO_NO
+      +     '<div><div class="titulo">Sin coincidencia</div>'
+      +     '<div class="sub">No se encontró ninguna constancia emitida con esos datos.</div></div>'
+      +   '</div>'
+      +   '<div class="pie-acta">'
+      +     'Revise que el folio y la clave estén transcritos exactamente como aparecen al pie de la constancia; '
+      +     'el cero y la letra O, y el uno y la letra I, se confunden con facilidad. '
+      +     'Considere también que las constancias se incorporan al padrón conforme se emiten. '
+      +     'Si el documento es legítimo y persiste el resultado, repórtelo a la Jefatura de Enseñanza con el folio impreso.'
+      +   '</div>'
+      + '</div>';
+  }
+
+  function pintaAviso(texto){
+    contenedor.innerHTML = ''
+      + '<div class="acta"><div class="banda no">' + ICONO_NO
+      + '<div><div class="titulo">No se pudo verificar</div>'
+      + '<div class="sub">' + escapa(texto) + '</div></div></div></div>';
+  }
+
+  async function verificar(folioBruto, claveBruta, nombreBruto){
+    var folio = normalizaFolio(folioBruto);
+    var clave = normalizaClave(claveBruta);
+    var nombre = normalizaNombre(nombreBruto);
+
+    if (!folio || !clave){
+      pintaAviso("Capture el folio y la clave de verificación. Ambos datos son necesarios.");
+      return;
+    }
+
+    var resumenClave = await resumen(folio + "|" + clave + "|CTO2026");
+    if (resumenClave === null){
+      pintaAviso("El navegador bloqueó las funciones criptográficas. Abra esta página mediante una dirección https.");
+      return;
+    }
+
+    var encontrado = null;
+    for (var i = 0; i < PADRON.length; i++){
+      if (PADRON[i].folio === folio && PADRON[i].h === resumenClave){
+        encontrado = PADRON[i];
+        break;
+      }
+    }
+
+    if (!encontrado){ pintaInvalida(); return; }
+
+    var estadoNombre = "sin-capturar";
+    if (nombre){
+      var resumenNombre = await resumen(folio + "|" + nombre + "|CTO2026");
+      estadoNombre = (resumenNombre === encontrado.hn) ? "coincide" : "difiere";
+    }
+
+    pintaValida(encontrado, folio, clave, estadoNombre);
+  }
+
+  formulario.addEventListener("submit", function(e){
+    e.preventDefault();
+    verificar(campoFolio.value, campoClave.value, campoNombre.value);
+  });
+
+  $("btn-limpiar").addEventListener("click", function(){
+    campoFolio.value = "";
+    campoClave.value = "";
+    campoNombre.value = "";
+    contenedor.innerHTML = "";
+    campoFolio.focus();
+  });
+
+  /* ---- Cifras del padrón ---- */
+  (function cifras(){
+    var asi = 0, pon = 0;
+    for (var i = 0; i < PADRON.length; i++){
+      if (PADRON[i].tipo === "ASI") asi++;
+      else if (PADRON[i].tipo === "PON") pon++;
+    }
+    $("c-total").textContent = PADRON.length;
+    $("c-asi").textContent = asi;
+    $("c-pon").textContent = pon;
+    $("nota-padron").textContent = "Última actualización del padrón: " + ACTUALIZADO + ".";
+  })();
+
+  /* ---- Lectura de parámetros del QR ----
+     Admite  ?f=FOLIO&v=CLAVE   ·   ?c=FOLIO&v=CLAVE   ·   /c/FOLIO?v=CLAVE  */
+  (function desdeUrl(){
+    var p = new URLSearchParams(window.location.search);
+    var folio = p.get("f") || p.get("folio") || p.get("c") || "";
+    var clave = p.get("v") || p.get("clave") || "";
+    if (!folio){
+      var m = window.location.pathname.match(/\/c\/([^/?#]+)/);
+      if (m) folio = decodeURIComponent(m[1]);
+    }
+    if (folio || clave){
+      campoFolio.value = normalizaFolio(folio);
+      campoClave.value = normalizaClave(clave);
+      if (folio && clave) verificar(folio, clave, "");
+      else $("pista").textContent = "Falta un dato en el enlace. Complete el campo vacío y presione Verificar.";
+    } else {
+      campoFolio.focus({preventScroll:true});
+    }
+  })();
+})();
+</script>
+
+</body>
+</html>
