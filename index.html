@@ -440,7 +440,7 @@
         </div>
         <div class="campo">
           <label for="clave">Clave de verificación</label>
-          <input id="clave" name="clave" placeholder="10 caracteres" spellcheck="false" maxlength="14">
+          <input id="clave" name="clave" placeholder="6 a 10 caracteres" spellcheck="false" maxlength="14">
         </div>
       </div>
       <div class="campo">
@@ -462,7 +462,7 @@
     <p class="seccion-nota">La verificación es pública y no requiere cuenta ni registro.</p>
     <ol class="pasos">
       <li><span class="n">01</span><p>Escanee el código QR del ángulo inferior izquierdo de la constancia, o abra esta página directamente.</p></li>
-      <li><span class="n">02</span><p>Capture el folio completo y la clave de diez caracteres. <span>Mayúsculas, minúsculas, acentos y espacios sobrantes se corrigen solos.</span></p></li>
+      <li><span class="n">02</span><p>Capture el folio completo y la clave de verificación (de seis a diez caracteres, según el tipo de constancia). <span>Mayúsculas, minúsculas, acentos y espacios sobrantes se corrigen solos.</span></p></li>
       <li><span class="n">03</span><p>Escriba además el nombre impreso si desea cotejar la identidad del titular. <span>Es opcional: la validez de la constancia no depende de este campo.</span></p></li>
       <li><span class="n">04</span><p>Lea el acta de verificación. Los datos desplegados provienen del registro de emisión, no del documento presentado.</p></li>
     </ol>
@@ -475,7 +475,7 @@
         <tr><th scope="row">Evento</th><td>I Congreso de Ciencias de la Salud, Hospital Tonalá Centro — SESAT</td></tr>
         <tr><th scope="row">Fechas</th><td>Miércoles 7 y jueves 8 de octubre de 2026, de 08:00 a 15:00 h</td></tr>
         <tr><th scope="row">Sede</th><td>Tonalá, Jalisco</td></tr>
-        <tr><th scope="row">Duración acreditada</th><td>14 horas por las dos jornadas</td></tr>
+        <tr><th scope="row">Duración acreditada</th><td>Asistencia: 14 horas por las dos jornadas. En las demás modalidades, la que se asienta en cada constancia.</td></tr>
         <tr><th scope="row">Modalidades</th><td>Asistente, ponente, moderador, tallerista, autor de trabajo libre, evaluador y comités</td></tr>
         <tr><th scope="row">Emite</th><td>Dirección General y Jefatura de Enseñanza del Hospital Tonalá Centro</td></tr>
         <tr><th scope="row">Clave de control</th><td><span class="clave" style="font-family:var(--mono);letter-spacing:.08em;font-weight:600;color:var(--dorado)">CTO2026</span></td></tr>
@@ -492,6 +492,7 @@
         <div class="cifra"><div class="v" id="c-total">0</div><div class="k">Constancias en padrón</div></div>
         <div class="cifra"><div class="v" id="c-asi">0</div><div class="k">Asistentes</div></div>
         <div class="cifra"><div class="v" id="c-pon">0</div><div class="k">Ponentes</div></div>
+        <div class="cifra"><div class="v" id="c-tl">0</div><div class="k">Trabajos libres</div></div>
       </div>
       <p id="nota-padron"></p>
       <p><strong style="color:var(--tinta);font-weight:600">Protección de datos personales:</strong> este portal no almacena nombres completos ni claves. De cada constancia conserva únicamente el nombre de pila con las iniciales de los apellidos y dos resúmenes criptográficos SHA-256 —uno de la clave y otro del nombre—, de los que no puede reconstruirse el dato original. El cotejo del nombre se resuelve comparando resúmenes en el navegador de quien consulta.</p>
@@ -537,7 +538,7 @@
      espacios simples. `parcial` es el nombre de pila y las iniciales de
      los apellidos.
      ===================================================================== */
-  var ACTUALIZADO = "28 de septiembre de 2026";
+  var ACTUALIZADO = "2 de octubre de 2026";
   var PADRON = [
     // ── ASISTENTES ──
     {
@@ -735,8 +736,501 @@
       sede:"Tonalá, Jalisco",
       expedida:"28 de septiembre de 2026",
       nota:""
-    }
+    },
     // ── FIN PONENTES ──
+
+    // ── TRABAJOS LIBRES (35 registros · una constancia por autor y por trabajo) ──
+    {
+      folio:"CTO2026-CONST-TL-001-A1",
+      h:"6a41f84be0e76047b9ed38d54b964709",
+      hn:"4dd2bcad627db5eabcdfd071286c9592",
+      parcial:"IVETTE DANIELLE D. M.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autora principal · Proyecto académico / innovación",
+      trabajo:"Implementación y evaluación de una formación simulada en tacto rectal y sondaje vesical en estudiantes de medicina",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-001-C1",
+      h:"0f89d9736fcbab3e73f0860b02c8b90e",
+      hn:"0a0f8e5879992563a95805592d8e6eb8",
+      parcial:"ALEJANDRO R. C.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Proyecto académico / innovación",
+      trabajo:"Implementación y evaluación de una formación simulada en tacto rectal y sondaje vesical en estudiantes de medicina",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-001-C2",
+      h:"ce4c3b82cd1dc81959a310b74b6f58fd",
+      hn:"0387d0e73b5e30589950bf350af1d157",
+      parcial:"FLOR NADXIELLI M. A.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautora · Proyecto académico / innovación",
+      trabajo:"Implementación y evaluación de una formación simulada en tacto rectal y sondaje vesical en estudiantes de medicina",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-001-C3",
+      h:"ebdadff6ef3661524c34bd55c8bba50d",
+      hn:"8dedf576d23f96454d07439a7b4ff31c",
+      parcial:"MARIO ANDRE A. E.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Proyecto académico / innovación",
+      trabajo:"Implementación y evaluación de una formación simulada en tacto rectal y sondaje vesical en estudiantes de medicina",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-001-C4",
+      h:"7ad0cd31b87657795d74de6d95e21e7b",
+      hn:"4258551322a134045ebbb043403e358e",
+      parcial:"IVAN JOSUE C. G.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Proyecto académico / innovación",
+      trabajo:"Implementación y evaluación de una formación simulada en tacto rectal y sondaje vesical en estudiantes de medicina",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-002-A1",
+      h:"70a09f7e50dbf347b991b73392ef8edd",
+      hn:"3cb73bf0dd723ba4102b298ba05a7ff1",
+      parcial:"FIDEL R. A.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autor principal · Caso clínico",
+      trabajo:"Acidosis en hemodiálisis: cuando la uremia no explica todo",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-002-C1",
+      h:"3244fe65409fa18bda693ee0a7501d3a",
+      hn:"347a9dce09ccc3d724f6b73930127a80",
+      parcial:"FERNANDA VALERIA C. L.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautora · Caso clínico",
+      trabajo:"Acidosis en hemodiálisis: cuando la uremia no explica todo",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-003-A1",
+      h:"b712b1cd8a2e2734c278a1b01538adb2",
+      hn:"e11334cfbea58d570124eede97d14398",
+      parcial:"ROBERTO M. B.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autor principal · Caso clínico",
+      trabajo:"Síndrome aórtico agudo atípico de presentación abdominal en el adulto mayor",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-003-A2",
+      h:"a6817aec3558cec14cc1a0976c9dfe07",
+      hn:"1528b38cf21f5477dfe107b1fdf92e4d",
+      parcial:"ANDREA FERNANDA M. H.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autora principal · Caso clínico",
+      trabajo:"Síndrome aórtico agudo atípico de presentación abdominal en el adulto mayor",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-003-S1",
+      h:"051fbe577227b3ed825e170e94b64fd7",
+      hn:"c74bc75a8e4dded062a0c599f1d55dd8",
+      parcial:"MACBETH ERNESTO ZARATUSTRA G. A.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Asesor · Caso clínico",
+      trabajo:"Síndrome aórtico agudo atípico de presentación abdominal en el adulto mayor",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-003-S2",
+      h:"b85a526ed43baf6d18529949df2e3a90",
+      hn:"7d5bbd29df00bb32b7dc534a20fafae4",
+      parcial:"FIDEL R. A.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Asesor · Caso clínico",
+      trabajo:"Síndrome aórtico agudo atípico de presentación abdominal en el adulto mayor",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-004-A1",
+      h:"10d6510935dfaa1652c01aba02bfd01b",
+      hn:"bf64a03b25ff22b8d0d276d14968824a",
+      parcial:"FERNANDA VALERIA C. L.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autora principal · Caso clínico",
+      trabajo:"Cuando «sensible» no significa eficaz: Enterobacter cloacae y AmpC en infección del acceso vascular",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-004-C1",
+      h:"3cffa828ae0a394ca06eb76d7a249b6e",
+      hn:"d54427e9033767196b120c2034f2ffae",
+      parcial:"FIDEL R. A.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"Cuando «sensible» no significa eficaz: Enterobacter cloacae y AmpC en infección del acceso vascular",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-005-A1",
+      h:"03e06d18173126e8d5596f03ce7a4241",
+      hn:"02e326f79b5e34904bbf000763ad3be0",
+      parcial:"BRYAN HETSAEL U. R.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autor principal · Cartel de investigación",
+      trabajo:"Asociación entre dificultad para hacer amigos e ideación suicida en adolescentes mexicanos de 10 a 17 años: análisis de ENSANUT Continua 2025",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-006-A1",
+      h:"b50b5485f3ad9d5e61ee30a69e730131",
+      hn:"3db5d8f48179cc31b43e09803fd6e976",
+      parcial:"VANESSA Z. P.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autora principal · Caso clínico",
+      trabajo:"Cuando el plaguicida no es un organofosforado: intoxicación aguda por amitraz",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-006-C1",
+      h:"f5c144bbc4cdc4a087e8ab5795e08b46",
+      hn:"26554be06ce88624a6569aaea410d841",
+      parcial:"SANTIAGO JAFETH A. M.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"Cuando el plaguicida no es un organofosforado: intoxicación aguda por amitraz",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-006-C2",
+      h:"e2ba07060053f727fc2a5c00913b94d5",
+      hn:"2cd22b972d333bb607ecdecd674790c6",
+      parcial:"FIDEL R. A.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"Cuando el plaguicida no es un organofosforado: intoxicación aguda por amitraz",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-006-C3",
+      h:"e92ae29d7312298322844d2d34ae27b3",
+      hn:"a6c79f81f2d6479853ed8b66ff083062",
+      parcial:"MACBETH ERNESTO ZARATUSTRA G. A.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"Cuando el plaguicida no es un organofosforado: intoxicación aguda por amitraz",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-007-A1",
+      h:"ca1a461dd4aeb5549295679b49dad6ae",
+      hn:"0ff8fe0a4c6e1098e6cf118395f94436",
+      parcial:"CESAR URIEL D. G.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autor principal · Caso clínico",
+      trabajo:"Crisis adrenal como simulador de choque séptico: un reto diagnóstico en urgencias",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-007-C1",
+      h:"9e4192450edfc0a074b1876e6cb3af5f",
+      hn:"fc4ede6b4fb73168f0a080e42da0df2b",
+      parcial:"IRVING IGNACIO M. J.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"Crisis adrenal como simulador de choque séptico: un reto diagnóstico en urgencias",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-007-C2",
+      h:"ea005f076899a39729a314b61dafdab9",
+      hn:"141bbbb489deba74b3e7718a12805b29",
+      parcial:"FIDEL R. A.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"Crisis adrenal como simulador de choque séptico: un reto diagnóstico en urgencias",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-007-C3",
+      h:"fba27d8c32c349b4a5b61acdecf306e8",
+      hn:"c6adc0faf99375632d5ba23d5bcf7048",
+      parcial:"MACBETH ERNESTO ZARATUSTRA G. A.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"Crisis adrenal como simulador de choque séptico: un reto diagnóstico en urgencias",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-008-A1",
+      h:"8e9545891e022c40d25d9d2f837ecc64",
+      hn:"fd4f617712931d07249b66d1544a7dae",
+      parcial:"LILIANA GABRIELA M. M.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autora principal · Caso clínico",
+      trabajo:"El reto del umbral convulsivo: probable neurocisticercosis en fase nodular cálcica con crisis convulsiva en paciente pediátrico",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-008-A2",
+      h:"f51c8f4a6b46edea4c9b27064934346d",
+      hn:"713e79b0ab3edd25dbd12113175205eb",
+      parcial:"MARIA ALESSANDRA A. H.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autora principal · Caso clínico",
+      trabajo:"El reto del umbral convulsivo: probable neurocisticercosis en fase nodular cálcica con crisis convulsiva en paciente pediátrico",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-008-C1",
+      h:"be07d3165b4f8ee2b317c0b09daca471",
+      hn:"058457a59e7cedd49b05d83c1b2beb7c",
+      parcial:"ARIEL G. Z.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"El reto del umbral convulsivo: probable neurocisticercosis en fase nodular cálcica con crisis convulsiva en paciente pediátrico",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-008-C2",
+      h:"1bad0de81b7ace30fe8be3241319838e",
+      hn:"ae38a1ee730417c59d19f2d49027fc49",
+      parcial:"MARTIN EMMANUEL R. M.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"El reto del umbral convulsivo: probable neurocisticercosis en fase nodular cálcica con crisis convulsiva en paciente pediátrico",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-008-C3",
+      h:"6dd999c97777c647c15d6d87311a2d68",
+      hn:"500e37888436548bac2e180bd23c8b37",
+      parcial:"FIDEL R. A.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"El reto del umbral convulsivo: probable neurocisticercosis en fase nodular cálcica con crisis convulsiva en paciente pediátrico",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-009-A1",
+      h:"4d0822987bf29fb7d3fd0bf9788d8713",
+      hn:"c00501f8df0a1694bc2acb1718aa1dea",
+      parcial:"ALEJANDRO M. R.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autor principal · Caso clínico",
+      trabajo:"Más allá de un electrocardiograma normal: estratificación del dolor torácico hasta el diagnóstico de enfermedad coronaria obstructiva severa",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-009-C1",
+      h:"adb85ef4ce0e10c14d8c9640c16be658",
+      hn:"f688db8088ad3ac99075293977d6d9c7",
+      parcial:"OSCAR GUADALUPE S. G.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"Más allá de un electrocardiograma normal: estratificación del dolor torácico hasta el diagnóstico de enfermedad coronaria obstructiva severa",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-009-C2",
+      h:"f6fd6d067c5f7d3e7b5d43a824713ef4",
+      hn:"de395956e966d467ba2f5367b2821ba9",
+      parcial:"TANIA MIROSLAVA F. C.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautora · Caso clínico",
+      trabajo:"Más allá de un electrocardiograma normal: estratificación del dolor torácico hasta el diagnóstico de enfermedad coronaria obstructiva severa",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-009-C3",
+      h:"c851d294a477c9e69395f274920aee55",
+      hn:"ac064c7108a3481b4cd1a140f059c822",
+      parcial:"FIDEL R. A.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"Más allá de un electrocardiograma normal: estratificación del dolor torácico hasta el diagnóstico de enfermedad coronaria obstructiva severa",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-009-C4",
+      h:"53e4236bc7d9bface26e4e52688d2e08",
+      hn:"0fbb883b196c40a89eda0365715d5e07",
+      parcial:"PAULO EMILIO C. P.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"Más allá de un electrocardiograma normal: estratificación del dolor torácico hasta el diagnóstico de enfermedad coronaria obstructiva severa",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-010-A1",
+      h:"7c0733cf59029b2f209141852e1824c3",
+      hn:"7091daa73a6e5a8c9e03e343f1bfb16a",
+      parcial:"KARLA ERLIN G. C.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Autora principal · Caso clínico",
+      trabajo:"Cetoacidosis diabética grave e insuficiencia renal aguda KDIGO 2 secundaria a mal apego terapéutico",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-010-C1",
+      h:"bd82bb9a356ca47c04da8866d66ebe8c",
+      hn:"17fbeabc651b43c651d93ed56bf6a57a",
+      parcial:"STEPHANIE GERLADINE C. O.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautora · Caso clínico",
+      trabajo:"Cetoacidosis diabética grave e insuficiencia renal aguda KDIGO 2 secundaria a mal apego terapéutico",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    },
+    {
+      folio:"CTO2026-CONST-TL-010-C2",
+      h:"089518b2825565a8b30f27638da4e73f",
+      hn:"4c23ae6e9ff23aa75b914b80d7c4344d",
+      parcial:"LUIS MIGUEL P. P.",
+      tipo:"TL",
+      modalidad:"Trabajo libre · Coautor · Caso clínico",
+      trabajo:"Cetoacidosis diabética grave e insuficiencia renal aguda KDIGO 2 secundaria a mal apego terapéutico",
+      horas:null,
+      fechas:"7 y 8 de octubre de 2026",
+      sede:"Tonalá, Jalisco",
+      expedida:"8 de octubre de 2026",
+      nota:""
+    }
+    // ── FIN TRABAJOS LIBRES ──
   ];
 
   /* ------------------------------------------------------------------ */
@@ -805,7 +1299,8 @@
       + renglon("Folio", '<span style="white-space:nowrap">' + escapa(folio) + '</span>', "dato")
       + renglon("Clave de verificación", escapa(clave), "dato")
       + renglon("Cotejo del nombre", cotejo, "")
-      + renglon("Horas acreditadas", '<span class="horas">' + reg.horas + '</span> horas', "")
+      + (reg.trabajo ? renglon("Trabajo libre", "«" + escapa(reg.trabajo) + "»") : "")
+      + (reg.horas ? renglon("Horas acreditadas", '<span class="horas">' + reg.horas + '</span> horas', "") : "")
       + renglon("Evento", "I Congreso de Ciencias de la Salud — Hospital Tonalá Centro (SESAT)")
       + renglon("Fechas", escapa(reg.fechas))
       + renglon("Sede", escapa(reg.sede))
@@ -826,8 +1321,12 @@
       +   '<div class="pie-acta">'
       +     (reg.nota ? '<div style="margin-bottom:8px"><strong>Nota:</strong> ' + escapa(reg.nota) + '</div>' : '')
       +     '<div style="margin-bottom:8px">El nombre se despliega abreviado por protección de datos personales. '
-      +     'La clave de verificación se deriva del <strong>nombre completo</strong> del titular: si el nombre impreso '
-      +     'hubiera sido alterado, la clave no validaría.</div>'
+      +     (reg.tipo === "TL"
+              ? 'El <strong>nombre completo</strong> del titular quedó asentado en el registro de emisión como resumen '
+                + 'criptográfico: escriba el nombre impreso en el campo «Nombre del titular» para cotejarlo. '
+                + 'Un nombre alterado no coincidiría.</div>'
+              : 'La clave de verificación se deriva del <strong>nombre completo</strong> del titular: si el nombre impreso '
+                + 'hubiera sido alterado, la clave no validaría.</div>')
       +     'Esta consulta confirma que los datos anteriores coinciden con el registro de emisión resguardado por la '
       +     'Jefatura de Enseñanza. Los datos mostrados provienen de ese registro, no del documento presentado: '
       +     'si el impreso difiere en modalidad u horas, prevalece lo asentado aquí.'
@@ -908,14 +1407,16 @@
 
   /* ---- Cifras del padrón ---- */
   (function cifras(){
-    var asi = 0, pon = 0;
+    var asi = 0, pon = 0, tl = 0;
     for (var i = 0; i < PADRON.length; i++){
       if (PADRON[i].tipo === "ASI") asi++;
       else if (PADRON[i].tipo === "PON") pon++;
+      else if (PADRON[i].tipo === "TL") tl++;
     }
     $("c-total").textContent = PADRON.length;
     $("c-asi").textContent = asi;
     $("c-pon").textContent = pon;
+    $("c-tl").textContent = tl;
     $("nota-padron").textContent = "Última actualización del padrón: " + ACTUALIZADO + ".";
   })();
 
