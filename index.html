@@ -541,19 +541,2550 @@
   var ACTUALIZADO = "2 de octubre de 2026";
   var PADRON = [
     // ── ASISTENTES ──
-    {
-      folio:"CTO2026-CONST-ASI-0001",
-      h:"66fb57eb29b1cd1462cbc5b8103ca736",
-      hn:"0bb9f9db92767ab58e77b2a69bad2211",
-      parcial:"CRISTIAN Q. E.",
-      tipo:"ASI",
-      modalidad:"Asistente · Programa completo",
-      horas:14,
-      fechas:"7 y 8 de octubre de 2026",
-      sede:"Tonalá, Jalisco",
-      expedida:"14 de septiembre de 2026",
-      nota:"Emisión de prueba del sistema de constancias."
-    },
+   // Registros para el arreglo PADRON de index.html — 363 constancias de asistente (12-oct-2026)
+const PADRON_ASI = [
+ {
+  "f": "CTO2026-CONST-ASI-0001",
+  "h": "501e78c29ba2ded1d60a0350c68bd507",
+  "hn": "0bb9f9db92767ab58e77b2a69bad2211",
+  "n": "CRISTIAN Q. E.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0002",
+  "h": "9c29817561ce0aca906a3a33ead1761e",
+  "hn": "a69c10b902be50ae4cc099db27973cd6",
+  "n": "EDGAR GEOVANNI P. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0003",
+  "h": "84fb467c1cd5b5bef351addca56acd37",
+  "hn": "64a95b370d1e9656b29a8a8b6aebec09",
+  "n": "LESLY VANESSA O. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0004",
+  "h": "f7fee666c4c162761db5a4ac9e3d2f23",
+  "hn": "ddffa7df8a9c20c04597fdb8340473af",
+  "n": "PAULINA SUSANA DE LA T. E.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0005",
+  "h": "82c2085c061ee8bb15e117ed88ead0f0",
+  "hn": "e9d50e36e574d673dc8335f1801794f3",
+  "n": "LUIS ADRIAN C. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0006",
+  "h": "4378c937d708cd42c64804c4a46653f3",
+  "hn": "686767aab9e26d0cee94f3080061f20d",
+  "n": "DARINKA G. O.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0007",
+  "h": "22b5541ea3c88f2a75736fafc11c1591",
+  "hn": "893ace65a705970d1296229596e0d842",
+  "n": "HUGO ALEJANDRO A. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0008",
+  "h": "2c8f1ba655f8aac4f84d938175747e2f",
+  "hn": "9126156df3934d9c43a13205ba5c5431",
+  "n": "DANIEL P. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0009",
+  "h": "0ead937551320683326753383e2bcdd4",
+  "hn": "8be9783dc9e1e45c34d696eb4d0e58dd",
+  "n": "ROCIO JESSICA P. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0010",
+  "h": "fc78f6d17e86c01d2819ab2d96abfb2e",
+  "hn": "a934a5e60d6289c837a0258febba464a",
+  "n": "JACQUELINE S. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0011",
+  "h": "13b6741845c509ecb9b363951bcf973b",
+  "hn": "4dd4a1cfb7e917ebb146a9eae432fea2",
+  "n": "JAQUELINE GUADALUPE R. U.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0012",
+  "h": "d98f4e203128f6f3ceee7824c99395c9",
+  "hn": "4c34cb4cae80279b173cba0598b17dc2",
+  "n": "LESLIE G. J.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0013",
+  "h": "fa2d63498871261c573cea0e03d452e0",
+  "hn": "3e25d45992ca322afd9edab5d1285c20",
+  "n": "DANIEL UZIEL G. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0014",
+  "h": "67d256fbf551fd54e001a1a433d0e825",
+  "hn": "9e0a89f01182769455e721840926cd00",
+  "n": "FRANCISCO DANIEL D. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0015",
+  "h": "06a4ae4d3fa8d0679b07c2fda9a2144c",
+  "hn": "a6e1e28a8c19df821394a86ebb6dbbd3",
+  "n": "ARIANA GAIL F. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0016",
+  "h": "dc5991f01e4e98bffdb687894b2ef172",
+  "hn": "305f962f35384acd5ddd1f0ec1065626",
+  "n": "BRITANY ANGELICA B. T.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0017",
+  "h": "557df105d8a4f3a09fb8e2fa6df562a3",
+  "hn": "4bbaa6ffc9bc1202407539c21cc3531a",
+  "n": "JENNIFER ESTEFANIA C. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0018",
+  "h": "d35c009128101feb7b668229da2f6953",
+  "hn": "b20c77635bb0c6b5023598392b45c73e",
+  "n": "PALOMA DEYANEIRA H. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0019",
+  "h": "530a4fadb957143003323dd8da565f83",
+  "hn": "cfb968ae29286d06e6b28fd3ee455ba1",
+  "n": "MOISES G. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0020",
+  "h": "91cd2b1f9a3190a63f81dee42b7f6532",
+  "hn": "55de52c4b62565fac3a8729e77472b42",
+  "n": "MARIA DEL ROSARIO S. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0021",
+  "h": "ae36df7237e06cd7b53d81202064975a",
+  "hn": "7d44fd816acbfb2f3e4e22fa30992fa2",
+  "n": "PASCUAL M. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0022",
+  "h": "5db3a4f654d40fdabd2e04c48c482d2a",
+  "hn": "0ed8824519d568bcd77041142086dc95",
+  "n": "ANA MARIA F. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0023",
+  "h": "40675cf93caf36eb033e880324323f95",
+  "hn": "d1f8f31ba5e2b65ab2c922502d9fcc27",
+  "n": "ANA ISABEL R. F.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0024",
+  "h": "4ea6ae3213ae74541562f16bd681e11a",
+  "hn": "910f899fd1c22c7959fc2cf2f9512883",
+  "n": "JIMYFER AILLEN M. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0025",
+  "h": "d9a6aaf028ae94f0a0e08a01c0f11bd6",
+  "hn": "08a511d5035e242e09747fef6a9bfd52",
+  "n": "NADIA HELENA A. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0026",
+  "h": "21a5425452761cf272a33ff788f61711",
+  "hn": "8eb5e162fc3024981a82546351cc07e9",
+  "n": "BEISI F. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0027",
+  "h": "bedc0ad7e3dede9e394d776700cc9676",
+  "hn": "be71f3341d5869c36132b00b2dc31011",
+  "n": "ANDREA ESTEFANIA L. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0028",
+  "h": "69cf90ee9f4c0c9dc592492c3474ea9f",
+  "hn": "2ba4b68d3e8737848d62157f9c04d806",
+  "n": "SOFIA FERNANDA M. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0029",
+  "h": "972e9d697d44f9713a865f97de5acad2",
+  "hn": "226d65ecaac9be8812874e109fca48ce",
+  "n": "ESTEFANY M. E.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0030",
+  "h": "b620b3f60988682ba1fe22e22d91ee93",
+  "hn": "01eaef1ad8889844e92b3ed844ed7fb7",
+  "n": "DANIEL R. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0031",
+  "h": "528fc3d40416a3a0d578aedb98357bd5",
+  "hn": "ddf55a20d44989c982f014103c4a83bb",
+  "n": "ARIEL ALONDRA A. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0032",
+  "h": "b728fea59cd62a04701d9ed9be1cedd2",
+  "hn": "3385bbd7f63789e8e58e8fc4eade83f1",
+  "n": "JONATHAN ALEJANDRO A. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0033",
+  "h": "89447649ce925befad88fdfbb4563d32",
+  "hn": "77a6802ef47b4da686510ec4d56da40e",
+  "n": "ITZEL NAJABI C. J.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0034",
+  "h": "24fa182ca8cd143b215e9a4dba948e01",
+  "hn": "34359c0a4c314c9aadcf1b23303a6104",
+  "n": "MARIA GUADALUPE L. O.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0035",
+  "h": "030f9836253bfe5d16331172b4ee9a15",
+  "hn": "0c41793d0843cac00a1e8f3bc2ff22ea",
+  "n": "ROSA FERNANDA D. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0036",
+  "h": "e9d9a30d831200c5b58dbe94a5f2b305",
+  "hn": "e8f26f9c4b3cb83db253ee98e565c0f3",
+  "n": "SALVADOR R. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0037",
+  "h": "da5c188d950f8aceff923203a923ef94",
+  "hn": "2c145e79c6fd8745a73704d1dcc4a439",
+  "n": "JEHIELI LIZBETH S. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0038",
+  "h": "b7a07051890de3ad5109273b29ff0dd9",
+  "hn": "7779382c7695a02c897f4c6f586a39a6",
+  "n": "DANIELA JAZMIN T. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0039",
+  "h": "48e89ffe0d46be745104aebae7e681c6",
+  "hn": "3645d8cf6406f09a0acaf968a248e321",
+  "n": "MAYRA JANETTE S. E.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0040",
+  "h": "619de52eecf17c68eca98762132858e2",
+  "hn": "996ac39b570847572e23887942f169e5",
+  "n": "ERIKA VANESSA C. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0041",
+  "h": "a3d057557bbb936850bf5cad5bc4a00b",
+  "hn": "da195df3a364c80d0f5ef441f17d6109",
+  "n": "IVAN JOSUE C. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0042",
+  "h": "05d55568576e4e3bea9188539a88e678",
+  "hn": "b525e85b837a53190745e8abf10f7467",
+  "n": "LILIANA GABRIELA M. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0043",
+  "h": "402059b80130d13132e27e502f2f35c7",
+  "hn": "2e03f86f12323a7eff74e55def289dc7",
+  "n": "FLOR NADXIELLI M. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0044",
+  "h": "62af36864b7665566363f37f78c6ea45",
+  "hn": "f9816f1c42ce45e5beb380e5da52e5d9",
+  "n": "MARIO ANDRE A. E.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0045",
+  "h": "67467c592e8c315d55e38ba229bb025b",
+  "hn": "ce02c2bc3af1832b25d67108388dc253",
+  "n": "IVETTE DANIELLE D. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0046",
+  "h": "7d20a4458da263423d62abc1f02a4c93",
+  "hn": "7dc8c01be95343682c146fef506e6589",
+  "n": "ALEJANDRO R. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0047",
+  "h": "df576c600c8e883b89e7c6c8fe0df21b",
+  "hn": "d923fdf545f6dba754e2111b7c6c994e",
+  "n": "EVELYN LIZBETH G. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0048",
+  "h": "4ac789874b72db78f5f011893641a97a",
+  "hn": "a2d22e793bb563afcec5c1da01bd325b",
+  "n": "JUAN CARLOS R. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0049",
+  "h": "494d12da11b1f853ab19031ec6904fdd",
+  "hn": "f34b186b46d010bf053c0e155e8783a2",
+  "n": "VANESSA Z. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0050",
+  "h": "a3d751f6f8eb92e7c607a024d80e98a2",
+  "hn": "69dc81c7678a05b96d121e8f8413649e",
+  "n": "KARLA ERLIN G. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0051",
+  "h": "2d2a6ae1a88654116b05d1cde466eeec",
+  "hn": "b29ec53d0b4eff076a6c8f1726c0ae30",
+  "n": "ERNESTO B. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0052",
+  "h": "6cc4242a24eb231ff43e7872a7c6c5d9",
+  "hn": "1fd6893eabe1aa8c4f1a89d6a7baf965",
+  "n": "CESAR URIEL DIAZ G. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0053",
+  "h": "b42a2fdcd0ad78dd8e096cabbe0b2ae0",
+  "hn": "f8a6049d60c05b660bf0323e2e37a06c",
+  "n": "SUSANA MONTSERRAT C. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0054",
+  "h": "70ed8b2a822f520702f1d3978e3274c3",
+  "hn": "d084033f91a1098bd3ed4ffb5d2d7a33",
+  "n": "FELIPE DE JESUS P. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0055",
+  "h": "9eb283932372594840a8bdaeeb7d5cad",
+  "hn": "c169be7847d0403a985fc924e71efa6e",
+  "n": "OSCAR GUADALUPE S. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0056",
+  "h": "f6673c6ba5e0cb01c42e07f326dd790d",
+  "hn": "9154ff66a8fe77ec37cf6d10c509809d",
+  "n": "BRYAM HETSAEL U. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0057",
+  "h": "5d3d4920d3f07d495f646f683d924fec",
+  "hn": "5068ec20ce9c14864de80eb67ae96675",
+  "n": "JOSE ROBERTO M. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0058",
+  "h": "63f44d9ef74c4cc9b29b1023541544b6",
+  "hn": "cec2b86638fb6a3a8934e961b9fa36eb",
+  "n": "ANDREA FERNANDA M. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0059",
+  "h": "50beefa4509fa3c8b3b4d54186f6a00f",
+  "hn": "a6c18d86b2d501dd9e9b9a6adbe31039",
+  "n": "TERESITA DE JESUS P. N.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0060",
+  "h": "a3ca83710381669627f9e8f8aad954f4",
+  "hn": "ee17ccfc5f31f7e584c3f81f2f01243d",
+  "n": "TANIA MIROSLAVA F. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0061",
+  "h": "e1cec19f53d1dfc8f5e8d1dab8bc9e2a",
+  "hn": "341101137b4bd96980468ef37d4899ad",
+  "n": "MAURICIO A. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0062",
+  "h": "a08d7672e2f91c5dd9d35a38e1a92efa",
+  "hn": "ac6b2d1fef1f6e70821635ec292eab66",
+  "n": "LUIS MIGUEL P. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0063",
+  "h": "a9c0d76b2d3978c4aba27d730514ada0",
+  "hn": "6069fa6198ff25a9308ee9f217d93b91",
+  "n": "STEPHANIE GERALDINE C. O.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0064",
+  "h": "86e3e865dfbbaa2fe7ec92554ee06c33",
+  "hn": "447c291a4fda7e2d3856febdd033de65",
+  "n": "CARMEN T. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0065",
+  "h": "29e81b071d6806c6f52d4049cb32d638",
+  "hn": "9c8b378f193cfcd4b3e08ef960db2d9a",
+  "n": "MACBETH ERNESTO ZARATUSTRA G. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0066",
+  "h": "94a0f7693fe4bb297439108fc2f8dcf8",
+  "hn": "548d5928c3f94b20e0968efbf85ab87b",
+  "n": "ANDREA GUADALUPE H. I.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0067",
+  "h": "b6e38e5d789a39a7dbb2bad8917033a5",
+  "hn": "a7bae9ef6f768c26aa44a43710666564",
+  "n": "JENIFER MAYTE A. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0068",
+  "h": "6339347fa288e5ce88a43002b6f4021d",
+  "hn": "fde88605e1a2a7f40ef003a6f55961a0",
+  "n": "PAULINA M. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0069",
+  "h": "4a326f5fd7ab8d8ffb7bb8c8217fb1a3",
+  "hn": "a29ab1c59f878d075a7f0c6d194eaf4e",
+  "n": "KENYA PAOLA A. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0070",
+  "h": "26f7574df114469a4f6ac254e16319cb",
+  "hn": "2f89906d0e0a8d5a0ee117f54dbef96f",
+  "n": "KIMBERLY F. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0071",
+  "h": "11a7610ad7e8bb7fe41992f71d0b224f",
+  "hn": "adefba0a821b56d3e95092b98435312a",
+  "n": "LUIS JAVIER A. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0072",
+  "h": "c9ab481f661d0dd3ee4eb02267051e43",
+  "hn": "8dd70f22042e0d5d3858d19add87b04f",
+  "n": "MARIA FERNANDA S. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0073",
+  "h": "199537f8a422e8e73378f9a5c2bf5a6b",
+  "hn": "274f7fa80474c8aeb0eff9a85820dfb6",
+  "n": "ITZEL GUADALUPE O. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0074",
+  "h": "6749a66f9276eaa23a5d6f520987d3af",
+  "hn": "8e96de5e14eb70e2f89262cb1d36e6bd",
+  "n": "CINTHIA GUADALUPE T. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0075",
+  "h": "b772cd5ee4731a8bd6bcf8d0159673a8",
+  "hn": "f273e7dceaa5d1edb345456ae4de2b64",
+  "n": "ESMERALDA MONSERRATT P. E.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0076",
+  "h": "85c8fd60ef589d65005336dd162e3010",
+  "hn": "8afc5caa5255d8e0b376c8eb0ce79319",
+  "n": "EDGAR C. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0077",
+  "h": "f3800829ea1c34a17fa761b432c93709",
+  "hn": "403771e32ce4c1beaaf9e247999203bc",
+  "n": "YULIANA YASMIN L. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0078",
+  "h": "b4d8223bef40d01050069a6fb7dae8d9",
+  "hn": "f68cb62da8d390fed85d8952c5ca3a4d",
+  "n": "IVAN DAVID S. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0079",
+  "h": "c9533e86c00e48965187e48dd09c0406",
+  "hn": "3411b116d5a39d285f614cf03fd00722",
+  "n": "DAFNE ITZEL A. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0080",
+  "h": "2934617e2c1479775b175843695a986c",
+  "hn": "2e28448a27ad313db8403d294af867d1",
+  "n": "GABRIELA DEL REFUGIO C. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0081",
+  "h": "7c80fd6191ee026e62b045407b99bddd",
+  "hn": "91076568599ae97e2a2a5a96baaafd37",
+  "n": "IRMA ELIZABETH A. I.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0082",
+  "h": "a97994be0f190ddb7cfa5e978a066500",
+  "hn": "5633885702fa31ca0d19f17b4c208893",
+  "n": "JESSICA ALEJANDRA A. N.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0083",
+  "h": "ece28995cad324c6b761effa39fe1b04",
+  "hn": "49a947ae73cf0a343fd5d082a2259b68",
+  "n": "ANGEL ADRIAN A. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0084",
+  "h": "39cf99b1555c835efdee895455751f78",
+  "hn": "be0183458533429fb69d2991187606d5",
+  "n": "ESTEFANY H. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0085",
+  "h": "a9599152c0bfb217a5276e6890ed5c63",
+  "hn": "95ea393a589b13d0e1539638fbdc3d6b",
+  "n": "ARACELI G. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0086",
+  "h": "c837d7fc3d56ae08522c1b13913e86b4",
+  "hn": "65506d99e99446fe36ed4d46a83f80da",
+  "n": "NATALY NAOMI GUADALUPE M. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0087",
+  "h": "b064b32f9145126fffa21f7d32ee9e6c",
+  "hn": "3414316f21fe83316d539a3e9085b589",
+  "n": "VICTORIA ESTEFANIA M. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0088",
+  "h": "f77b33cd053c4a0001f0870ddc2649fb",
+  "hn": "7fce8fe47e6f91b59df8dfdc47b57f3a",
+  "n": "JENNIFER L. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0089",
+  "h": "5c7efd198402cec7854997dddbca1954",
+  "hn": "e0810ca0e76628c5db26f16e012f253e",
+  "n": "DULCE YESENIA Z. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0090",
+  "h": "b76c63d2a266bb92c68a1f45fe91c290",
+  "hn": "e77af7d77e222f0a0afa14361c6d12ce",
+  "n": "VICTORIA DANAI R. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0091",
+  "h": "5aa8e7f9d6c76696d323b7bc86dae4bf",
+  "hn": "003a50ea9f3efcc06fb5079e8d8600e7",
+  "n": "DANIELA ITZEL R. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0092",
+  "h": "9dfd5319e3eee78eac22fd8501efa9cd",
+  "hn": "428666a0b8ab4c79e545bc25e73efbbc",
+  "n": "JOSELINE ESMERALDA A. T.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0093",
+  "h": "e8c569613d2e00378a7ef278fd2ab756",
+  "hn": "d0562d9298eed2abd2ef3bef91fe7925",
+  "n": "DANIELA S. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0094",
+  "h": "7f3fde1bc2d2b379f54d57496c11feeb",
+  "hn": "aa05096eaf3c138ca7cd1d13e872b244",
+  "n": "EDGAR ATLAI M. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0095",
+  "h": "dc097de0f49a3625bb828dc1242c3c4c",
+  "hn": "9235b26ba7a7c53252319754e414098b",
+  "n": "JUAN RAMON A. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0096",
+  "h": "2c1c2b212e4b12728ce94ca3236a0217",
+  "hn": "aeac9688b6da242dfe96901691b488df",
+  "n": "QUEILA PAOLA J. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0097",
+  "h": "6848f1a64ab19aedecfcf6c4b6a953dd",
+  "hn": "c25070547e92a4eb0b32ba6de45f3040",
+  "n": "ZAIDA ELIZABETH DE LA M. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0098",
+  "h": "67341b8e4060e46775b9fb6c40555a6f",
+  "hn": "395a21204879c3666bc409ac3acfdd69",
+  "n": "MATILDE ISABEL DE GUADALUPE J. F.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0099",
+  "h": "6e8051eb59fa175c258dc1552afddebf",
+  "hn": "c3eadc372eb00639bb7eaa1e21aae7c5",
+  "n": "YURIDIA LIZETT G. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0100",
+  "h": "a26e00fbef7d0bd60a06c4c29af93f8f",
+  "hn": "2eaa6478ff8d303d16c4306b432014ae",
+  "n": "FERNANDO AZAEL V. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0101",
+  "h": "f3edd8c61a4a49ac3ddb78dbbd9ec8d1",
+  "hn": "a81d8ea34aeac79b49f0d985a4b1d185",
+  "n": "MICHELLE NICOL G. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0102",
+  "h": "fc78c7df27738702f994fd4ef4934287",
+  "hn": "5690a93ac6697bc229fd4c683e0febd7",
+  "n": "YOHALI ALEJANDRA D. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0103",
+  "h": "9626854ea5a6d6d8132d096d0ea6eee7",
+  "hn": "f8f332a8347756028ef875b8e129c462",
+  "n": "SAMARA JACQUELINE M. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0104",
+  "h": "a8190f84614886307d2a4bcc6a5b2393",
+  "hn": "49ce44a8bb41b56b271d3b905c6f4cab",
+  "n": "ROSARIO GUADALUPE S. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0105",
+  "h": "d2ecfecabea8f28f9c3727541d892a17",
+  "hn": "a4efba29c45d618148b5940bf2bfa308",
+  "n": "KEIRY VALERIA R. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0106",
+  "h": "b250b9f77bf0d40a055652a261c5c4c0",
+  "hn": "a66b6b9bfd326acb137567998cfa4d83",
+  "n": "MARIA GUADALUPE G. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0107",
+  "h": "bbea50714dd05427226635e59c5f8af1",
+  "hn": "307e0b29af101e62e7d0cd9e04db0e25",
+  "n": "ALONDRA L. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0108",
+  "h": "9abce303313fb24f3f9c433511a8e318",
+  "hn": "81cd74c07c740875287d1e768b62886f",
+  "n": "BLANCA EVELYN R. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0109",
+  "h": "9af46635b7c4a674843d2204bcdc92e3",
+  "hn": "cbbb9db379bb40d080dfbab312f5fc99",
+  "n": "MARIA FERNANDA E. O.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0110",
+  "h": "0da35b2e5e98976a964bfdab37f9a818",
+  "hn": "9cd110545286815963123554994c6883",
+  "n": "VIRIDIANA R. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0111",
+  "h": "3f39bf38db812f5067015df16340404b",
+  "hn": "66ea1683179f2e4494fdd018b6e5fc3c",
+  "n": "ALONDRA YARAZET B. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0112",
+  "h": "e67e21a56cc62641daf1eb09446ff721",
+  "hn": "045b3822109c10de433000f0c9a9cdcf",
+  "n": "PRISCILA MONTSERRAT V. N.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0113",
+  "h": "abb3ee47e58139db2ed2c049a7e06ca0",
+  "hn": "dd1a117a5cbf608954ac91c678287c67",
+  "n": "KASSANDRA O. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0114",
+  "h": "df1f012be1fe9d9f41143f7edd0f6d70",
+  "hn": "e098eb5590fc86790e3aaa3c55dbdab9",
+  "n": "ROCIO ALONDRA R. N.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0115",
+  "h": "b54329db0aace6ad05cfc51fa1191501",
+  "hn": "a2c3c23f182f21811f016d3959abab2c",
+  "n": "MARIANA MONSERRAT M. T.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0116",
+  "h": "54422d2a9afc3093013e37fa2a5f525f",
+  "hn": "196a481becad70450223127799e4057b",
+  "n": "AYLIN PAULINA G. N.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0117",
+  "h": "00efbac4682e22d803457417f2876c7d",
+  "hn": "8b03d84965e9be3b209f2e486e1d4a0a",
+  "n": "ANHA DALLAY M. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0118",
+  "h": "6b0996ca5824221e6f1a969c3ab6910e",
+  "hn": "5b1b74f24c600a6ec7124bb182b92604",
+  "n": "IRVING IGNACIO M. J.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0119",
+  "h": "65d53b082c78407c3a0bbb39360d2510",
+  "hn": "e23ddb0ebdb9da40104378b242cb2891",
+  "n": "JESSICA ZACNICTE C. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0120",
+  "h": "686e5f34f9012895656b725e8d556c2f",
+  "hn": "d823355f090d7e050aa93adb3e8debb1",
+  "n": "LIZBETH M. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0121",
+  "h": "651c1771de614d1ca66543e33f0791b1",
+  "hn": "0ee661546c79a3eb565dcbcd0687d08d",
+  "n": "FATIMA GUADALUPE L. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0122",
+  "h": "14326a9d6788254e11ec38ebb7037ffa",
+  "hn": "c4ccaeda5cf2a0ca0ab48ab0fbe5b702",
+  "n": "ANGELA CRISTINA GABRIELA G. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0123",
+  "h": "3692d922638ae8c1277594db825bdede",
+  "hn": "7acb9ae16fd1b6f7e9e54fcbb5c50241",
+  "n": "WENDY JAZMIN R. E.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0124",
+  "h": "8a84b5c906b06b8ef0e2dbdbcbac8cd1",
+  "hn": "e4485724c9e5c524becc8cadd17bca86",
+  "n": "PAULINA ALEJANDRA R. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0125",
+  "h": "dc8ebcd818c6f78b9b7059a787f69275",
+  "hn": "9e694ea0b1a014a244f21fe476b6be2d",
+  "n": "ANDREA C. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0126",
+  "h": "ac77fd1c1b2e981a7036d84ce2576782",
+  "hn": "65e7691e7fdebe3a070d2542b9c64381",
+  "n": "ALEXA MICHELLE G. J.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0127",
+  "h": "a01b413d0864359db7153d00cb1ca30f",
+  "hn": "cd96dbd2f3dc84cf7a41f685a13974a0",
+  "n": "MARIA FERNADA M. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0128",
+  "h": "012d84dc21e3593fe7a1551879d59ffc",
+  "hn": "b74448810afb7f0b5e9f3a9098165bc6",
+  "n": "VANESSA R. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0129",
+  "h": "0cc152e17a3a2bd091e6e3ba96a5a035",
+  "hn": "356fc7838fd59a525c185dda98712ab4",
+  "n": "ANA PAULA G. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0130",
+  "h": "546fea0ad6e326e15c34db08382cce90",
+  "hn": "2138fcd7273f83efa8878a2ae1402523",
+  "n": "EVELYN M. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0131",
+  "h": "2cc243af9b3104747dd80a03f796bc46",
+  "hn": "0fa352058837bbf9610f71d5841ff0dc",
+  "n": "AHTZIRI G. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0132",
+  "h": "4c72b66ff3f48aea497ec4fb1abc8af3",
+  "hn": "ef2a7fa9b224008162bfe8d6fe2c3bf8",
+  "n": "ALONDRA GUADALUPE G. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0133",
+  "h": "57583af17032ca3359146d5463fc750c",
+  "hn": "c748a4a303e9705fa650d61409f48683",
+  "n": "ALISON DANIELA S. Z.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0134",
+  "h": "7b0946bb48accf7237f3307db65071de",
+  "hn": "f101a2f43fb664162dce9ca32459e20c",
+  "n": "ROSARIO LIZBETH E. Z.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0135",
+  "h": "1fab3590049bf16167835d55e0b0a819",
+  "hn": "942c14e26b05e19371108f8010902299",
+  "n": "CAMILA ALEJANDRA L. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0136",
+  "h": "4808a7df749aa9e6b740931822495882",
+  "hn": "20e63856e358ddb4fc738b2e476bb804",
+  "n": "JUAN ANTONIO A. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0137",
+  "h": "ccc2ceddea539bf5172300dc6808ca3a",
+  "hn": "930321605773546af8bed0e27bdee1df",
+  "n": "ERIKA PATRICIA M. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0138",
+  "h": "234b333923242220d81cad3b834f2460",
+  "hn": "4aea7b9aee81f6e58ea446dc7b8f064c",
+  "n": "JESSICA LISBETH C. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0139",
+  "h": "b50693928b896cc35ada1987fb9d2d2e",
+  "hn": "cfe00190e748c9cfd4d2a9ba7b3f8743",
+  "n": "LIDIA JANET C. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0140",
+  "h": "ea52b65a1096f401b562f3e89ac67402",
+  "hn": "ffb2ee808e21ffa17333be8bbe62a957",
+  "n": "ESTEFANI C. O.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0141",
+  "h": "0704bf3a1540e42833b6967c213f19bc",
+  "hn": "823f4b361c556f36552198e67cf74f7a",
+  "n": "MARIA FERNANDA F. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0142",
+  "h": "060b8f29e5d9a0ff6399b31111c291a3",
+  "hn": "172e3b2ff9d63cd5c8720b0be5af6567",
+  "n": "DENISSE ITZEL A. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0143",
+  "h": "b4ba6229a717b54f98df630fea62077b",
+  "hn": "81ea2a8fc1063194d9d6df78a7082aa8",
+  "n": "JAYRO NOE O. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0144",
+  "h": "34470e5b87e4f8ae825f74dea390fc50",
+  "hn": "d58f7cf9399134f0ca2e1c33ee2dec31",
+  "n": "JESSICA JANETH V. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0145",
+  "h": "88f08921024e2deb860c27037f0bc10a",
+  "hn": "710ba8894706ff3102f094ac132cea08",
+  "n": "INDIRA BELEN Q. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0146",
+  "h": "3d917cf657a87be438176537000ebd08",
+  "hn": "f0e0da18a1b593a1c178cdf98b0578de",
+  "n": "MARIA FERNANDA G. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0147",
+  "h": "4a19a8b5a880a308bfdab8d59bbe1773",
+  "hn": "2f385081023eb84dbe67edd5ec0bfe6a",
+  "n": "ALMA SARAI V. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0148",
+  "h": "ff37d92169c307cc5465c6dd737c7317",
+  "hn": "995219915a2f3bb2f55b55be3d743e9e",
+  "n": "PABLO ADRIAN H. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0149",
+  "h": "3d01927c4dc1ae4e0031568ab1e68d38",
+  "hn": "952359eeeeab5cac6e6d9c1ba3d41a85",
+  "n": "ALMA GABRIELA M. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0150",
+  "h": "783d37c160acecebe2e82ec1104adb86",
+  "hn": "4a16b6bc8c2b36c792f6406a8a95693c",
+  "n": "MERAB SAMSERAI R. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0151",
+  "h": "8461a1645f6d7c38d599d8633fc19cbc",
+  "hn": "3ec09f9c77abe0ec1de3dc71f79fa8ab",
+  "n": "CARMEN EMMYLENE S. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0152",
+  "h": "878c11d02f43c2b02306619de28a9bdc",
+  "hn": "b5c1eb850234a626f9673f1ea06492ae",
+  "n": "STEPHANIE RUBI F. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0153",
+  "h": "c0496212d00f71d78ee2247b9d56b88e",
+  "hn": "cd490a34868f0edf882b2030f1fc2641",
+  "n": "CHRISTIAN ALEJANDRO Z. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0154",
+  "h": "1084c99c5fa42a27c0787a56a4a00201",
+  "hn": "264d4c9cd5cf21d4782265d4e2f833ef",
+  "n": "JAZMIN GUADALUPE A. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0155",
+  "h": "a66dc90dd79b230774ad95f71e60ecbd",
+  "hn": "837c975e86328be09e5f4c28f6238e3d",
+  "n": "FATIMA ELIZABETH F. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0156",
+  "h": "8b13d3a555a49e7100ded04c4d3ae058",
+  "hn": "b1d367e827543ff2b01801b1b3973024",
+  "n": "YULIET ALEXANDRA C. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0157",
+  "h": "f853532e7865bd7e519ff8d3942a52fd",
+  "hn": "59e76acacee3b10c518e82b3c1b2f4a6",
+  "n": "JOANA VALERIA VALENTINA M. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0158",
+  "h": "4bd6903eae085be0a96a1665a74da8b3",
+  "hn": "62f51ebfe9c40c5d9e5a5e9c280bb100",
+  "n": "GRACIELA MARGARITA L. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0159",
+  "h": "b15cbd2f87a8b6530e35eb7e6a78e4bf",
+  "hn": "a89da1f62530b8981a3961a223628747",
+  "n": "BRENDA LIZBETH L. Z.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0160",
+  "h": "5cf38324082a8d5a2f6b7aa4b34b4fc1",
+  "hn": "45d66e2a2c8d524948aab1fbf359199b",
+  "n": "FRANCIA PAMELA M. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0161",
+  "h": "d62c84468bd534734f711f8e257ffe09",
+  "hn": "2e037c119073c76853d17ea3eb696cd9",
+  "n": "LUZ ELENA M. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0162",
+  "h": "72478127f704f8a26e05975c85b9ca74",
+  "hn": "45ae53e069d038e5e0d7a5a186e0ec98",
+  "n": "CINTHYA GUADALUPE B. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0163",
+  "h": "e6c911246e57569973a80a11697c2ae1",
+  "hn": "1bb0ab368a38f674206c2140477efd1c",
+  "n": "ADRIANA GUADALUPE R. D.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0164",
+  "h": "40fc845cabf80eebbb507a66c1151efe",
+  "hn": "88a7c2cb0862e5a9ead68c404b41577a",
+  "n": "MARIA JOSE N. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0165",
+  "h": "9cf148a1e6cf747b32dbbb7fe9d96828",
+  "hn": "68627623f6a84caefd1cbe19496b70c9",
+  "n": "CINTHIA MONTSERRATH P. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0166",
+  "h": "4668150b790601eec893e445421554a8",
+  "hn": "c9c75d815e52e67f13a92a640c6e489d",
+  "n": "LAURA MICHELLE C. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0167",
+  "h": "50d71463925f57f67ca9e55f9389d6f8",
+  "hn": "087d48089dd3a21955d836b4df7b4ca2",
+  "n": "ANGELICA LIZBETH V. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0168",
+  "h": "2357b2c85035411b7d8051e5bab9fc95",
+  "hn": "b45900e00abf72dd173169018ccafd60",
+  "n": "IRMA VIOLETA T. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0169",
+  "h": "5042a231b3b32278166d2019d131fa6b",
+  "hn": "b8b81f819ac30bad27284ec36cb36196",
+  "n": "PAOLA CITLALLI P. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0170",
+  "h": "b26916baa37740ca78a9097c87b87e85",
+  "hn": "3dc85a87c00d87fb04963944a67c5272",
+  "n": "VALERIA NAEROVY D. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0171",
+  "h": "20838fd38e19488710d4b5d89e98d34a",
+  "hn": "6c680d077504e4169a573cf258335a72",
+  "n": "CARLOS MANUEL D. F.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0172",
+  "h": "0318a5ccb2ed5c9a75983a51e5e2aff3",
+  "hn": "56423412e754e0459cc9ef6e59867432",
+  "n": "MICHELLE ESTEPHANIA R. O.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0173",
+  "h": "13211e5d25773a8841cbe7486f5fd57e",
+  "hn": "4e7e6c8a4daebf9078c88505a0a7722b",
+  "n": "VICTORIA MONSERRAT G. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0174",
+  "h": "4c307924e194417aacea7404b4f6b9dd",
+  "hn": "8b5324a43b3849db85c2ad11b75ca25f",
+  "n": "MANUEL M. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0175",
+  "h": "ec7eafee152b965c292840bc84de2ce6",
+  "hn": "b6578e0a9b2bf7420de6145274c0531a",
+  "n": "MARISOL ARANZAZU B. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0176",
+  "h": "98866a95d9ef04a273f51a2855495076",
+  "hn": "da61e33271d9ae7b2283675221755415",
+  "n": "MARTIN EMMANUEL R. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0177",
+  "h": "b3d441239511ce793c0b9010e5f04484",
+  "hn": "74e55675674402fcddb0654a3acdb4b4",
+  "n": "CHRISTIAN MARIA LISSET R. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0178",
+  "h": "0225d2db536ff44db2ea8f2e9cde82a7",
+  "hn": "d77ed38a5905b9cfdd7a5bc7a3b295a5",
+  "n": "PATRICIA MONSERRAT C. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0179",
+  "h": "15e1ec2279f66660e5e86055c62a5668",
+  "hn": "f4097e0065dfe02f108bd3f4ef1e7295",
+  "n": "MELISSA ESTELA H. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0180",
+  "h": "0293398357e3f9188c2b2607a7c12491",
+  "hn": "94fc9e9e88a887689eda27eddf82dd96",
+  "n": "SOFIA GUADALUPE M. F.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0181",
+  "h": "94c790b4e2f12d70f5d1796f75643e19",
+  "hn": "2c983be61658694aa678aa1aef6ff002",
+  "n": "ANDREA SARAHI C. O.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0182",
+  "h": "a09bd6cda9f22ddc23333133e8f6b529",
+  "hn": "7366136c5ec9ea4e960f8046aabf4021",
+  "n": "NATALY H. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0183",
+  "h": "23ead96402544d87a74cee4690a5e9fd",
+  "hn": "ef58a73bac2a9d4a8a00179f02d0d2de",
+  "n": "ITXIA JOHANA B. Z.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0184",
+  "h": "9981a3921cc1edeb8904e8b9fb565f44",
+  "hn": "db676189f97fcb5c485fad321f9d9fa7",
+  "n": "ANDREA GUADALUPE C. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0185",
+  "h": "3feb6d304b8c8ec584eb65865ffc31eb",
+  "hn": "948412c7403ebce296e1d43ece85a4c6",
+  "n": "MARIA DEL CARMEN B. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0186",
+  "h": "afe37efc3a5b710faea6fb407d2e2706",
+  "hn": "642e5c070e5adfc57ec59bf1c81cced1",
+  "n": "CRISTIAN ULISES F. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0187",
+  "h": "29bf4f3796e9ee2382fe152a05480a2d",
+  "hn": "c65c24dddb2399c06f40e9a92956dcaf",
+  "n": "LUIS ALBERTO P. T.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0188",
+  "h": "a445b43c9b2e7f3fe8ed6e9b881f70db",
+  "hn": "1d3c66bec648d3b5acb650ff34c84f95",
+  "n": "DANIELA MICHELL B. Z.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0189",
+  "h": "fbfcae019ac607db4405883107fb13a5",
+  "hn": "c130d884e746f93699274ea3dd80671a",
+  "n": "BRENDA AIDE V. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0190",
+  "h": "ff6d041bd738e548d83c957bcd0f9a76",
+  "hn": "7116e283f8eb818e3e701d4aff34ab1a",
+  "n": "EVELIN V. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0191",
+  "h": "ce89534502cea2dff2257453051db00d",
+  "hn": "5464e0bcfcf6029124d1faad81d0e453",
+  "n": "KEVIN DAVID V. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0192",
+  "h": "0d5b4f30806e316b55991154681b6c7b",
+  "hn": "a31b2e5ef2d1fcbd9975e2be3a230924",
+  "n": "ALEJANDRO M. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0193",
+  "h": "977f283846459630f31761ab5e15dc6c",
+  "hn": "be2c292bad24bd8f01ff8842147a4a12",
+  "n": "KEVIN ALEXIS G. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0194",
+  "h": "284111fedd6165e0f80b7af9004225de",
+  "hn": "c63bcb33c7979027caa57ceddcef92ee",
+  "n": "ARIEL G. Z.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0195",
+  "h": "77d380a78ab87ce12896895c37647144",
+  "hn": "3913667e39bae1a0756acf1dca3372c8",
+  "n": "RODRIGO ABDIEL HAZBAIM G. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0196",
+  "h": "887daf708409c9b894651e71e17ad437",
+  "hn": "d47fd67f297da692a935503e7f3f0eb6",
+  "n": "LESLIE YAMILE J. O.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0197",
+  "h": "4f3df9a02dfc1c7e5ff8ab1acedbaf22",
+  "hn": "24c07c5c7b237ba7f29ef5555b379f5f",
+  "n": "LIZET JACQUELINE M. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0198",
+  "h": "2ad03a24a30065849aad288e21db6cd1",
+  "hn": "48d4acaa1ae6ce765a683552184ee154",
+  "n": "BRANDON ALEXEI V. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0199",
+  "h": "7ae960341890b17d08479c3a73d0055f",
+  "hn": "82bf88dac0aa3d3f3c89935b47d8af17",
+  "n": "MARIA ALESSANDRA A. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0200",
+  "h": "273cc6d00685eca72448e74ea9f4154b",
+  "hn": "f26177cff240757cabfee44725144a8f",
+  "n": "CYNTHIA BETSABE M. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0201",
+  "h": "1fb4399d59952849203899d697067c36",
+  "hn": "78691c8abcf156fc23e5530907f21b45",
+  "n": "MARIA DEL ROCIO N. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0202",
+  "h": "e188c85db16d2fb787030026ef8a57f8",
+  "hn": "aeebad799f42fdbfd4b5196242cdde98",
+  "n": "CHRISTOFER ADRIAN E. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0203",
+  "h": "fb62216b3e58be2e36bbd1b3bd4c47ce",
+  "hn": "3498a0b09025e400016720701244d570",
+  "n": "DANIELA ITZEL H. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0204",
+  "h": "6a0b6e1bbc469f93ae094c9196dd89e9",
+  "hn": "5e366ae13495b284e84fb805c2b019c4",
+  "n": "BRENDA LIZZET S. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0205",
+  "h": "f71901d7fb4d5b8b4058ad08d09f8225",
+  "hn": "61b688ce7f4c32d390780f20e86a6d0e",
+  "n": "ALEJANDRA GUADALUPE E. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0206",
+  "h": "2ccc68da246b1ed1815bad5c9eb0636a",
+  "hn": "98ebb7d62944406199eaa65fcdc02c81",
+  "n": "PRISCILA MARILYN C. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0207",
+  "h": "2c1191e809bb841a84a9a754c170bf65",
+  "hn": "b811c37b8bf3aa048de75071f6ca1bd3",
+  "n": "XIMENA V. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0208",
+  "h": "668722b91071e78ea0b4877270420ef5",
+  "hn": "07e19b1bb3e62d79ef6e224388b045fe",
+  "n": "GERSON MIGUEL R. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0209",
+  "h": "2e95473cb38d5e52856efb16c231bdd8",
+  "hn": "d502b793ff58448bdb0ed29262a5cc05",
+  "n": "JOSEFINA A. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0210",
+  "h": "0fe81b69e1607aeadb8993f6ddc12ed5",
+  "hn": "112ec4cc652d4f2a9140af5738581aa1",
+  "n": "SAHORI S. N.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0211",
+  "h": "0e7fd62bba6661ff9844688ddf50fbfa",
+  "hn": "dd507180ad1ea209d476cb5b73dc6911",
+  "n": "AHTZIRI FABIOLA N. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0212",
+  "h": "e6db07495b61979e834f5b36d03dc510",
+  "hn": "d84c1e3e7f82ee2425a8215a1be4d3ab",
+  "n": "BRANDON URIEL A. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0213",
+  "h": "7021386c4c73afa59a9d674d89504e70",
+  "hn": "ebe116ed41a0ef0cc73d9dd5aebb4239",
+  "n": "DIEGO GAEL A. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0214",
+  "h": "dd779cf599eb97eb01eb002144e70394",
+  "hn": "e02c34896c14aab3e0cff3293a7921de",
+  "n": "NAYLET ALESSANDRA G. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0215",
+  "h": "b18181aec9e3f52182bc32f43b98581c",
+  "hn": "a05dd9a9272e83e7efdc7e1e21087efa",
+  "n": "MARIA DE JESUS C. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0216",
+  "h": "de16a2accbfccfaa84a795d7d6fc84d6",
+  "hn": "ae9010ce3dc55b9fce05c6c65ad514b2",
+  "n": "JESSICA SUSANA N. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0217",
+  "h": "e86a656304ab59999b24d658079a0ea3",
+  "hn": "3a340382a2c61a9fad4c3f4b07c32fd3",
+  "n": "DIANA GUADALUPE P. T.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0218",
+  "h": "e1a8d75312b75b2951b389b2e54cf2d8",
+  "hn": "64f27aec39cb0e093186a217ec5702be",
+  "n": "GRACIELA JAZMIN M. F.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0219",
+  "h": "357ac618663c5687f4393cbb2c1c67e9",
+  "hn": "c2b241570bc7915762739533102ead4c",
+  "n": "ANA TERESA O. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0220",
+  "h": "1fa80822c50d48c9f37b09d9aecfb67d",
+  "hn": "c1af51b2b95541105c50390a23c2de65",
+  "n": "ANA KAREN I. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0221",
+  "h": "f0550c171a5c40519ecf8c2519426b2f",
+  "hn": "2ddd88664bac96e4b2cc8b1fb7d4ff57",
+  "n": "HUMBERTO M. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0222",
+  "h": "b2772cd8934e1813741f67f1f09b4820",
+  "hn": "735aa97b350295bd56497dd9546ec60a",
+  "n": "CAROLINA LOURDES M. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0223",
+  "h": "9bb48fed40017135c8dd4761be3fb968",
+  "hn": "5f023756cacf2eda96dd2d4469b60c9d",
+  "n": "SANDRA MARIA L. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0224",
+  "h": "7d039876fb2fba71edf00c79e24773c8",
+  "hn": "b90cb96a8ad334fbf4c1ddb5ba78cc23",
+  "n": "EVELIN MARLENNE P. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0225",
+  "h": "214c1ddc8ef0b302be39b9c4250d0556",
+  "hn": "f10d60150a742a60aec7304d24398c56",
+  "n": "EMY VANESA LARIOS DE L. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0226",
+  "h": "4e85ccbc1a7b05b0d91c31b545a58f5d",
+  "hn": "5af99d1e019a9334467814dc395f7b05",
+  "n": "SARA NOEMI L. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0227",
+  "h": "41054b672c46ca4ac26b0c6e544c96da",
+  "hn": "4f6d5b6bd65c04fe79482020ca3b72a4",
+  "n": "PRISCILA G. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0228",
+  "h": "04edb7a98e785fe11d285c8038fa8e95",
+  "hn": "b98dac8ded94a4eca5bd0a97270fc0a4",
+  "n": "ALFONSO R. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0229",
+  "h": "802d121413045e1f915176ceb21fbf5e",
+  "hn": "05fc9ee80ba6f96f6cb32e5d7c1ed399",
+  "n": "MARYFER M. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0230",
+  "h": "af16dc7a951d664a84b8bb23bc479b63",
+  "hn": "ac9a5e29737ae17880d7f97b22dbb171",
+  "n": "CARMEN JANELLE A. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0231",
+  "h": "322f27081ed0a40a4da9171cb5c03102",
+  "hn": "770e31d903d8ebc4e06b6dcb4b9ebbab",
+  "n": "CHRISTOPHER JEAN R. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0232",
+  "h": "22725f7b110e6a5bbb9b70404091d1e0",
+  "hn": "3565af004994a3dd8880a31078aaad11",
+  "n": "JESUS ALEJANDRO A. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0233",
+  "h": "8bf76b057aa8ad693b68354e1f0a130d",
+  "hn": "bb9a852bf9d658ed33fd265708368ff6",
+  "n": "ADAN H. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0234",
+  "h": "01e8814ff679a4bcbb03f2826bc3930a",
+  "hn": "52cf59db064782d84bf906fa84f719a8",
+  "n": "CESAR ALBERTO R. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0235",
+  "h": "9abd5b43ba9a832cb295224535f84649",
+  "hn": "567902342042f4b639f8893a97365d40",
+  "n": "MIGUEL ANGEL C. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0236",
+  "h": "f1143bf4b4db4ed74e4e8dc7acaf4201",
+  "hn": "d6750f9b12bfb029a84237cd985dc7ee",
+  "n": "JOVANNI SAMUEL V. I.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0237",
+  "h": "bc1044cd27194608144d40fee8330607",
+  "hn": "e17396dc921eb71b72c04373496f55a6",
+  "n": "NAHOMI PAULINA Q. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0238",
+  "h": "26a0626518613e15501c097dc44cd411",
+  "hn": "cc9e59b295706a8031ca0d63b1451def",
+  "n": "FATIMA GUADALUPE I. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0239",
+  "h": "aadf60d19b90472c13d5a0874663a7d4",
+  "hn": "8edcc1f70da922f93b53ea982b21bdd1",
+  "n": "SHEILY YAZMIN G. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0240",
+  "h": "10403f271fb623a12d6d9ac7d8e1bb97",
+  "hn": "26f7ea95cbb71890c2d483178961a298",
+  "n": "STEPHANNIE GUADALUPE G. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0241",
+  "h": "db6d769d408701271c0aa83923c67522",
+  "hn": "a81b41fbbc91ec16af0f6e13ecd09a06",
+  "n": "DANA PAOLA C. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0242",
+  "h": "610e6445a2c3f780f0514a0949bdcdb8",
+  "hn": "99bb75040ea0860535021cff7ebfde72",
+  "n": "JUAN CARLOS A. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0243",
+  "h": "1c4ed18ed455c2a4371d6ad626344961",
+  "hn": "a1b2adf0310c5f8dd7b9f6ff4edca98f",
+  "n": "PAOLA VIRIDIANA L. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0244",
+  "h": "2c224288efd41d2c09d88359255c99b5",
+  "hn": "d617a518f4aeed523131a26d473573d0",
+  "n": "WENDY JOSEFINA F. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0245",
+  "h": "f78f1a9d5c12a4efeabc2abc0e5db18c",
+  "hn": "d751616877f8c3813631d27a5932bc79",
+  "n": "JUAN ERNESTO R. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0246",
+  "h": "378655f2a0ded27964d90c9861c9ee33",
+  "hn": "d538e76cdbe714dc4211a990eb249bcb",
+  "n": "MARIA DEL ROSARIO G. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0247",
+  "h": "342c465aa05bd6f0e75a57d9330efe2f",
+  "hn": "8c39e994d757057b036adaeb0f09424d",
+  "n": "TERESITA DE JESUS R. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0248",
+  "h": "4f84b3b0cb7763b0de35b6feba59a9cd",
+  "hn": "f0dac3169dbb2b28af44b1bfef209a38",
+  "n": "J ASCENCION M. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0249",
+  "h": "83708b7017d6e038fe69846cf3af4830",
+  "hn": "24c8161b93b81699f124e18a28060de8",
+  "n": "SARA SOFIA G. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0250",
+  "h": "a55e72e83bbdee1553271c53e6badf64",
+  "hn": "ccc94fbdb76e2debb184aef960cf9085",
+  "n": "ESMERALDA ELIZABETH M. F.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0251",
+  "h": "e3aa1ab3fe341c4c27fc6b13e8d19541",
+  "hn": "6059867922cf114e1e0ff0a7a8566e44",
+  "n": "MONICA BARBARA M. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0252",
+  "h": "8dcd459529b808edfd984bba7f64ce40",
+  "hn": "f241be8f7ac5e52f1223c1cf3c213878",
+  "n": "ERNESTO DE JESUS D. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0253",
+  "h": "69f0529fbccd562b1e766f4af4329523",
+  "hn": "16043472ae55db6de52af1d355dcbad6",
+  "n": "ROSA ELENA JANETT G. T.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0254",
+  "h": "fe2d9063c6ce0ef2c626206819908e9e",
+  "hn": "06a756da762dfd1f5957d214ec056388",
+  "n": "KITZIA ESTRELLA SINAI S. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0255",
+  "h": "992e97be3080ee184ef108e17f16c352",
+  "hn": "4fccf5350126da5c6458d07ebe0881e8",
+  "n": "ALEJANDRA M. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0256",
+  "h": "5e8f45cb924b326131901a38f8d4d77b",
+  "hn": "68eefaa8d63a4ec102b9ba29d1f8ed62",
+  "n": "BLANCA ESTELA G. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0257",
+  "h": "c11423fddf674e766209615077b785e1",
+  "hn": "e462caa318f72aadcb3733b967795300",
+  "n": "CLAUDIA ELIZABETH D. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0258",
+  "h": "929ad642866aaf9e6f6ab068e10fb81e",
+  "hn": "446bbd9cbefb95470b67b036ec3c809d",
+  "n": "IZA YARETH T. D.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0259",
+  "h": "915dceca309a9f96d3581410a78cade4",
+  "hn": "0c7c8ae82d378d44b13f933d3b10b0da",
+  "n": "PALOMA GRISELDA R. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0260",
+  "h": "4b73a7a4e42145f7eb411023aa7ee46b",
+  "hn": "2f9c2d95c980fb2767582800367f2284",
+  "n": "MARIA GUADALUPE A. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0261",
+  "h": "5da741965d809d11a546df24e605ce40",
+  "hn": "2f575c47d54d6879954ba5f0a63ac563",
+  "n": "DANIELA ALEJANDRA A. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0262",
+  "h": "90ed289b267dd665eec42b401b9f2b91",
+  "hn": "0e85102a646da4b4272755aadb8e0e10",
+  "n": "LUIS P. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0263",
+  "h": "826af287a894bbef1b31793e501b2b3c",
+  "hn": "f65cb4f41def70557d28f55c5eb592af",
+  "n": "MARY DIANA G. T.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0264",
+  "h": "9b86da27ad9bb9e77d9984b55bfe7526",
+  "hn": "78e3d3687936c8a2954433c557bce0c2",
+  "n": "BEATRIZ ADRIANA R. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0265",
+  "h": "7969fce54012bfa0384c6e8f3f9e0b88",
+  "hn": "96ae6b9744a4a89833fc89c1cbb868ee",
+  "n": "LORENA G. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0266",
+  "h": "8ad9998a1e761f57e6bb648ab3d0dcdc",
+  "hn": "0584d5eb7a81f884f113c9417614df3e",
+  "n": "JOSE LUIS T. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0267",
+  "h": "4c70d6726b946c6d8c52c65e74f33933",
+  "hn": "5038ef403587a026fa3e33c46337485e",
+  "n": "MARIA MAGDALENA V. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0268",
+  "h": "14b9853f9e1dcabf671e81f565f5e089",
+  "hn": "9921873a91b2de489cc42ce039460273",
+  "n": "MARIA ISABEL Z. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0269",
+  "h": "34a11df21383362c02089e39db4df35c",
+  "hn": "102bd877cf583c97ce1ea631847ec97e",
+  "n": "AMERICA VIRIDIANA L. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0270",
+  "h": "66150e291d7d797acb679db8433d1d7d",
+  "hn": "79597c9e3a78747e4bfee913c6255757",
+  "n": "ROCIO PAOLA R. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0271",
+  "h": "4b0074ae9830ebb468b072aba4eb4d8d",
+  "hn": "33017e64b5db9cae467ee2670e3610f6",
+  "n": "FERNANDO G. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0272",
+  "h": "5a08b738cac2ae5c11d2b3af1f8fe56b",
+  "hn": "f805e05e395670d84c2944f2d39ea54e",
+  "n": "ZARA GARCIA D. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0273",
+  "h": "cd5b7a34467fa5ab7f8348bb27168afe",
+  "hn": "d272b523dc95023a8b1192d5b1293e71",
+  "n": "AMERICA NICHOLE H. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0274",
+  "h": "8dcb93e9051b7a021334ba8097607de2",
+  "hn": "b04066a98a415c56e50bc51b0ba4f0a6",
+  "n": "NATALIE VIOLETA C. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0275",
+  "h": "23d5505e669f077e3d5f980546f798be",
+  "hn": "ecbbaed1b099b441fc41b1fc1497e57d",
+  "n": "NATHALY GUADALUPE D. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0276",
+  "h": "170a4720749f92e6fdc0be6b86cefb00",
+  "hn": "15cca7de66859e0b18b3e46bac81f2b8",
+  "n": "SANDRA YADIRA G. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0277",
+  "h": "079b7ae17a3efbcda0546d52681c62bb",
+  "hn": "08ba737f89b963928d9fdc8975e4dd08",
+  "n": "OMAR ISRAEL H. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0278",
+  "h": "e4f0418c54bc995c518e15116556f34f",
+  "hn": "bef4ace48af96de8db360bccf2103248",
+  "n": "ALBERTO G. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0279",
+  "h": "29ab34a02d94b73fe13848244c731b91",
+  "hn": "e25b1340445af888609c0c0823b9c738",
+  "n": "MELANIE FERNANDA P. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0280",
+  "h": "f9b9c0e38b092d1bdf084c077bd79b42",
+  "hn": "8ac960e9947e0cbbf18dd8d456878a66",
+  "n": "MARIA TERESA G. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0281",
+  "h": "a0c093fc9e6d477edaa5bb77713aa88d",
+  "hn": "bb3e96601ce0499e6c35363b41d6a410",
+  "n": "CHRISTIAN N. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0282",
+  "h": "f808d9f6321708cdb54e02ceee8e2e58",
+  "hn": "65685ceb0dbe58ec2d830b3bddc7bfef",
+  "n": "MIROSLAVA A. Z.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0283",
+  "h": "276b2acc2a3031ccc6f931ffc52351b6",
+  "hn": "03f065ab5337fc751380469ff25cd6f5",
+  "n": "JOSE DE JESUS V. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0284",
+  "h": "a341b9e6afa109332ca4ecfbd72fdd1d",
+  "hn": "fac7ea171de9695c6d61f6eb39209f35",
+  "n": "JOHALY DEL CARMEN L. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0285",
+  "h": "218b28790ab08fb156ae1a433d4cbef3",
+  "hn": "3b0623786a7e9eb15e917d4493d79876",
+  "n": "ANAYELY LIZBETH M. U.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0286",
+  "h": "5dc03de35413bf7ff837025dfd43a6c4",
+  "hn": "17ab0fc29ea11f52ff82818541b26130",
+  "n": "KARLA DARLEM LIZBETH M. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0287",
+  "h": "1c6166bc58b4c8d772fb49b52fe72b55",
+  "hn": "a7aed453e33567f928cd606dd1fd70e8",
+  "n": "ERICKA GUADALUPE J. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0288",
+  "h": "560d30f9e562cddbc8eac9880aa853b8",
+  "hn": "0264658b95d334e0d4dcaeea489bdd02",
+  "n": "MARIA EUGENIA S. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0289",
+  "h": "90e0e02bdaa38a82604b09a9c36a6f26",
+  "hn": "cdb85ba8a06b996d1ef8e810f834f094",
+  "n": "HILDA ARACELI C. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0290",
+  "h": "629eaac66772e586f589d59cdefb8477",
+  "hn": "6467b16c78bf35ce31f82a864ed33380",
+  "n": "JOSE LUIS R. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0291",
+  "h": "c13779f1b44fe0fcb33f297f667b4cb0",
+  "hn": "d632f3b96a26417add08835fb0c75346",
+  "n": "CYNTHIA BELEN R. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0292",
+  "h": "c11c80154804196d3d242fb268190192",
+  "hn": "50e43919b57ca0bde461b12bcd4c4f76",
+  "n": "KARIME MICHELLE M. I.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0293",
+  "h": "8868b98043b4d3cc0b28e26b1ab77932",
+  "hn": "1de638bdd90a9cb9fb004aece615d026",
+  "n": "EDGAR DANIEL R. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0294",
+  "h": "edcd1a13e5efd71de6b036a5af6f5611",
+  "hn": "d2a4d34acf553fca649ea49f084bc0f4",
+  "n": "MARIA FERNANDA V. F.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0295",
+  "h": "2f20072ff9b686c201626b02f667e3f6",
+  "hn": "247371d502d48064f8eddd1fb897bf5f",
+  "n": "JOSE JUAN M. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0296",
+  "h": "8def1b9a93ed734a5073a55a172b82f5",
+  "hn": "cd031af4c219a6f084f5125e824a02ab",
+  "n": "XIMENA N. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0297",
+  "h": "ec781bf6e0e9e9525c203e145c503515",
+  "hn": "6be74faf02aaac6f5f60376117f37f7b",
+  "n": "FERNANDA VALERIA C. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0298",
+  "h": "d715a1cddf5492d8892d4e30409e6407",
+  "hn": "4cabffd52c0c1786253497b30f9313c4",
+  "n": "FIDEL R. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0299",
+  "h": "fbfa0d3e7a8f3ef6551f08771934a22e",
+  "hn": "e3ff62740f227a62baa687bb60b0a546",
+  "n": "VICTOR DANIEL N. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0300",
+  "h": "3a592a8fc9ba70430d49f6a8e91dd19c",
+  "hn": "c94bb7c131762ed6c529ed4a07affd05",
+  "n": "CYNTHIA GABRIELA G. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0301",
+  "h": "722a9fb49c4831385b1e41cc52d0658d",
+  "hn": "bf762aae25d1d814f8edab2f824c2ec3",
+  "n": "IVAN ALBERTO D. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0302",
+  "h": "94718da5791f67b4aecc9cc25d23f5b3",
+  "hn": "b7bf92e6ba1630b2567ae9a9dff1c23d",
+  "n": "JUAN CARLOS F. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0303",
+  "h": "b8bcd71bf3ff5325805b68e0d0aef096",
+  "hn": "c173b5dffe3103c1b61e539adc619b5e",
+  "n": "GRACE ENELES C. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0304",
+  "h": "d1b13cfb0970677535945cd85f7c78ea",
+  "hn": "a4f27f1070361e23c2ca62cd304838fd",
+  "n": "LAURA ARACELI C. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0305",
+  "h": "d6e323eeccfc1e556b4c99830d9d62c2",
+  "hn": "9e162dfc8bc69b5b280e9046fb0d7d46",
+  "n": "XOCHITL ISABEL D. J.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0306",
+  "h": "93f68c5f5573b223cce4ce772b027793",
+  "hn": "0b7b78c6fe3908aeacd94c43d8a1c9ae",
+  "n": "KARLA MONTSERRAT M. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0307",
+  "h": "fe0536a8fb81b039692efa7daa04ce47",
+  "hn": "b3cc950942f63a9ff4bdefd50522e571",
+  "n": "YURITZI ISABEL H. F.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0308",
+  "h": "e568474eba803f4a1b3e28fb80523ef6",
+  "hn": "a9ccb1ec346bad6f0b079ed6ba0554fd",
+  "n": "NORMA PATRICIA R. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0309",
+  "h": "f02c32b1caaafff384d55e4888c3b2e6",
+  "hn": "4bae80f814b19a2a409c546265a04a07",
+  "n": "MIGUEL C. D.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0310",
+  "h": "e03bf08a91567eb5e0ecfdcfcbf81cbd",
+  "hn": "7b4be08a3da1621be4c241e93e0f8c99",
+  "n": "SAID BERNARDO C. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0311",
+  "h": "95531b0a4f3945d630c7ee782efc3d08",
+  "hn": "5fe2853f6cbd1419c5555357b996f11f",
+  "n": "AITZIRI NEREIDA R. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0312",
+  "h": "a7a5822871eb3dcb7c69816de6d48129",
+  "hn": "094134a1611220aa7501bf0af39e0bbd",
+  "n": "ELISEO A. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0313",
+  "h": "d3476e3a2038f11894af730e1ac53490",
+  "hn": "4ee863f3ba476aa4270975daed614992",
+  "n": "MITZI ARANZAZU V. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0314",
+  "h": "a11691429d0db21289a5ad2d649ea03f",
+  "hn": "c82c5f5afb0f59e232a2ce439c0c16cd",
+  "n": "SERGIO V. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0315",
+  "h": "9c7050c072d4627b065d7368c4d99bff",
+  "hn": "fc27a08174f1fe9280a1d463bcba102d",
+  "n": "MA GUADALUPE L. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0316",
+  "h": "7a27883db923ac77128ed8d35922c0a0",
+  "hn": "5659f8c45ddb185a38cf3cd1df70f1b7",
+  "n": "ERIKA ALESSANDRA U. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0317",
+  "h": "4f15f42f4cd420dcafa31301d5c64e0b",
+  "hn": "f7e91759a328faeec29ddf2cd6b1e73f",
+  "n": "JIMENA MICHELLE S. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0318",
+  "h": "0e2a36edd2d119305974b8319578fabb",
+  "hn": "ada0e49c8c8d23476dc54faf352e8591",
+  "n": "CRISTIAN ALBERTO R. D.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0319",
+  "h": "53e8544c1b9ad110e4065f9792e84d4f",
+  "hn": "fec34d1945dc8080bd5d115b106e819b",
+  "n": "ALONSO NATHANAEL R. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0320",
+  "h": "b6a68778d66578b098cf8f8c76d88206",
+  "hn": "8c455f87de34f313c12967cfbf2cc4d5",
+  "n": "JESUS EMMANUEL F. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0321",
+  "h": "c508a61768335f160046c627f4cc3207",
+  "hn": "12e95bb3ca89759c8740c2e3454b696b",
+  "n": "MARIA ANGELICA V. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0322",
+  "h": "425dd23097f8192e6df630f9fa606fb5",
+  "hn": "3cde72c559bef48b7a95df1144611145",
+  "n": "KATHIA S. E.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0323",
+  "h": "0c1d916a5965e21dad4ca091e695629c",
+  "hn": "4067e0b666b89a96b5ece49d0ff64f47",
+  "n": "MARTHA VALERIA P. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0324",
+  "h": "ada1e0c39a675d3bebe5303b9443af32",
+  "hn": "4ea8dd1b776b100f329bad8735422387",
+  "n": "SILVIA D. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0325",
+  "h": "a6c007508cb3b41ac444998ac825d1ae",
+  "hn": "92565ec10cbedc9ced882d30bb0f86a6",
+  "n": "MARIA DE JESUS D. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0326",
+  "h": "31042ffe979dc7cd00b86b1eaba3d504",
+  "hn": "13ffada7fa11e87c272428f52fe23881",
+  "n": "MARIA DE LOURDES G. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0327",
+  "h": "22b50ca4b83087d904ec6bb134180730",
+  "hn": "2938879c7621c5422bcc81bf16e76fcd",
+  "n": "SOCORRO GUADALUPE T. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0328",
+  "h": "5ccb28f2b96e8d48ec982deb978ed696",
+  "hn": "d729a20c0ffe49e2d6ecc7ca4cc203e3",
+  "n": "MARIO ALBERTO S. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0329",
+  "h": "2f8f4e25086dc00d6653a18f80d8dc18",
+  "hn": "3d6599a9af32922f3dce834c79e6033f",
+  "n": "ESTEFANIA SARAHI F. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0330",
+  "h": "bf32266090449ce2b8064890163b41d7",
+  "hn": "868903ec78676d59afc07fae25e6d9f2",
+  "n": "SAUL ALEJANDRO D. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0331",
+  "h": "ce4550c51d3818b3cdca4eebb5709c08",
+  "hn": "b15ce5533adc4e3ed51eb3573c081648",
+  "n": "BARBARA GUADALUPE S. E.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0332",
+  "h": "238fb8cfd3c1a943a514e8aa11b8f670",
+  "hn": "d6ace3c15d102769d1fd5b9be8434072",
+  "n": "ESPERANZA DE LA LUZ A. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0333",
+  "h": "420b65ee576f03540f9fa292f54a323d",
+  "hn": "e3a8c689adcff1054b647db2f15cb749",
+  "n": "DALIA VIANNEY P. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0334",
+  "h": "5a36e0e56ea920b4c23daa9330d8def2",
+  "hn": "96490f2948f4b0d05846468d4efe4e1d",
+  "n": "MARIA DEL CARMEN V. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0335",
+  "h": "3cba180cc940bba6275d7f7fa217ac30",
+  "hn": "811328a3c6365665318a012654b10d9e",
+  "n": "KARELY GUADALUPE D. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0336",
+  "h": "39fb8fde3c7f42323b100d536e0c6f2a",
+  "hn": "0f48ce33784dd6a66036a4af38ab46ae",
+  "n": "JOYCE LIZBETH S. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0337",
+  "h": "5155f07a359a3b340e5498101d161988",
+  "hn": "fdcd0606bc87cc7696236d21b1f5ced3",
+  "n": "LUZ ARELY B. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0338",
+  "h": "f69788ab52acdb2cecfc1aea012a7bc1",
+  "hn": "0b88c5ec6b9d84b998042ffb1ef23e79",
+  "n": "MARIA DEL CARMEN L. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0339",
+  "h": "6ba2df4dfe1d51f65539cddb7b0db116",
+  "hn": "3d4f573d0ca9806d51108b7e7f866cab",
+  "n": "SAMUEL AZAEL A. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0340",
+  "h": "e32e1b261677d4757bd17fbea71b1a91",
+  "hn": "6ca6bae9c4db4fe323371e0d3b5f49dd",
+  "n": "EVA MIROSLAVA H. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0341",
+  "h": "a0083cb6f8f974a54fd17b5cc503009e",
+  "hn": "2ec39093cb211f47733bc91e0f78f3ae",
+  "n": "LUIS ANGEL J. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0342",
+  "h": "e88309240441e46fd985b4a9bdf38672",
+  "hn": "9321b696b8b0a1f7da775183c252427f",
+  "n": "ATZIRI S. H.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0343",
+  "h": "112066a592971c9a3a5d5c3a0ac7ca63",
+  "hn": "cc9ec3b53ea13bdc0aeda79a8978de61",
+  "n": "ROCIO ELIZABETH M. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0344",
+  "h": "d7bdb97247a5e3713820bcf433efb59d",
+  "hn": "a635f1c37260a3c86f801389f850acf8",
+  "n": "ALEJANDRA MONSERRAT G. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0345",
+  "h": "f2e2fb3c1aa1b0a207fae04d682aaa0c",
+  "hn": "032712081a5757762eb6b517f4ae9d4e",
+  "n": "KARINA GARCIA R. O.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0346",
+  "h": "a51ff0688d53223f41adea08c2ecba18",
+  "hn": "a2d1d9ea92c05b8213f3b6d86498674c",
+  "n": "CITLALLI JAQUELINE H. S.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0347",
+  "h": "c2cf9fac8478afea1fc30ca5159b1694",
+  "hn": "e6ffbd3676d843b190e3152107ecb15f",
+  "n": "ERIKA JANETTE O. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0348",
+  "h": "f0afd143d2eea69aa7f323405a3079e6",
+  "hn": "7236241c8ea5bfef3427414aea01cb0f",
+  "n": "ADRIAN C. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0349",
+  "h": "7fc496f95bb1c0e74daa073436176634",
+  "hn": "8f44ddb4c8cb23366281618ac6173a84",
+  "n": "TERESA R. R.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0350",
+  "h": "30d519d4671f5ef987391a3e58bb25c8",
+  "hn": "5627fc0c13e3c50ca387dd52a1cb675e",
+  "n": "ANGELICA YAZMIN H. O.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0351",
+  "h": "b2cba940e662f7eeaa633750ad76d00a",
+  "hn": "7a298a1abaf1b13654b0d38b8b99a161",
+  "n": "IVETTE H. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0352",
+  "h": "c2b3ca972a4793fb352ba081899e7973",
+  "hn": "26feff952862b9a7019cba70fb4654a4",
+  "n": "MOISES J. V.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0353",
+  "h": "507861312f229da9952c94c54b6c7fe3",
+  "hn": "dd66d39b7dbb8aa1461108248f545637",
+  "n": "CLEMENTE G. L.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0354",
+  "h": "2041aefaef941538a3c084242e5afd5f",
+  "hn": "3f68bf9860832808ef2c4b9f0ef5fdbf",
+  "n": "JOSE DE JESUS E. C.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0355",
+  "h": "fab7ddc99ff60356a9b92516bf1fd293",
+  "hn": "1ab0537bb44e6674f66a38dd91fccb51",
+  "n": "CLAUDIA M. J.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0356",
+  "h": "7807f382292429752d9d40bc5d5b44ef",
+  "hn": "e36c1258346da3146656f3419018eafa",
+  "n": "SISMAI S. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0357",
+  "h": "f7f0a152a36dd1c1f1fededb495bddf5",
+  "hn": "4010ddafd3c43bc43886d01752bb2d99",
+  "n": "MARIA ISABEL Z. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0358",
+  "h": "fd4e456a4be1809e48ec0f1b9edcfb91",
+  "hn": "e46d8a95b6222aa80be360963e8e4496",
+  "n": "FERNANDA CAROLINA F. A.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0359",
+  "h": "53e925b23ff3303c120de195620c7c10",
+  "hn": "361ac07c7810c87e8b9435c3e688b168",
+  "n": "EULALIA M. B.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0360",
+  "h": "2614c1c31c994722a0df2c20be9df4d9",
+  "hn": "2c96d0d7679be378e64f01234802873c",
+  "n": "ALMA ELIZABETH H. P.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0361",
+  "h": "90a72abf16bf0021bbcc97080fd537a0",
+  "hn": "251e20ba902a7aebc7d823f2d1556d1d",
+  "n": "SALMA SIGUENZA H. M.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0362",
+  "h": "13c8cca7f1fa6bfb04733f3a9961b137",
+  "hn": "4b39ff6a172a21afd8fdd53e77570e46",
+  "n": "LINDA MARGARITA G. G.",
+  "hrs": 14
+ },
+ {
+  "f": "CTO2026-CONST-ASI-0363",
+  "h": "c0281bf56bc059e4d535e06700acf2f5",
+  "hn": "b9a81c12b4fc147243f85e6a0dca4799",
+  "n": "ARELY VANESSA Q. C.",
+  "hrs": 14
+ }
+];
     // ── PONENTES (14 registros) ──
     {
       folio:"CTO2026-CONST-PON-MED-01",
